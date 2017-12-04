@@ -36,7 +36,7 @@
 															<td class="neibutd1">取个昵称:</td>
 															<td class="neibutd2"><input type="text" name="user_name" id="user_name" class="btn_zn"/></td>
 															<td class="neibutd3">
-																<label class="field_notice">用于登录的名字</label>
+																<label id="field_notice" class="field_notice">用于登录的名字</label>
 																<label class="checking" id="cheching_email">检查中...</label>
 															</td>
 														</tr>
@@ -59,23 +59,22 @@
 														<tr>
 															<td class="neibutd1">性别:</td>
 															<td class="neibutd2 sex">
-																<input type="radio" name="gebder" value="2" checked="checked"/>&nbsp;女
-																<input type="radio" name="gebder" value="1"/>&nbsp;男
+																<input id="female" type="radio" name="gebder" value="2" checked="checked"/>&nbsp;女
+																<input id="male" type="radio" name="gebder" value="1"/>&nbsp;男
 															</td>
 															<td class="neibutd3">
 																<label class="field_notice"></label>
-																<label class="checking" id="cheching_email">检查中...</label>
 															</td>
 														</tr>
 														<tr>
 															<td class="neibutd1">验证码:</td>
 															<td class="neibutd2 yanzheng">
-																<input type="text" name="captcha" id="captcha" class="btn_zn2"/>
-																<a href="javascript:;" class="renewedl"></a>
+																<input id="input_code"  type="text" style="width: 100px;"/>
+																<img src="" id="gen_code"  style="width: 100px; height: 35px; margin-left:5px"></img>
 															</td>
 															<td class="neibutd3">
-																<label class="field_notice">点击更换</label>
-																<label class="checking" id="cheching_email">检查中...</label>
+																<label  class="field_notice">看不清，换一张</label>
+																<label id="checking" style="color: red;font-size: 15px;"></label>
 															</td>
 														</tr>
 													</tbody>
@@ -94,7 +93,7 @@
 															</label>
 														</td></tr>
 														<tr class="liji"><td>
-															<input type="button" value="注册" name="submit" id="submit" class="login_nbtn" title="立即注册" onclick="sub_form();" />
+															<input type="button" value="注册" name="submit" id="submit" class="login_nbtn" title="立即注册" />
 														</td></tr>
 													</tbody>
 												</table>

@@ -9,7 +9,7 @@ body,html,ul,li,h1,h2,h3,h4,h5,h6,dl,dt,dd,form,div,p,img,table,tr,th,strong{
 }
 a{text-decoration:none;color: black;}
 ul,dl{list-style-type:none;}
-h1,h2,h3,h4,h5,h6{font-size:12px;font-weight:400;}
+h1,h2,h3,h4,h5,h6{font-size:12px;}
 img{border:0;}
 input{font-size:12px;line-height:18px;color:#8A8A8A;}
 a:hover{color: #26c4c9;}
@@ -29,7 +29,7 @@ a:hover{color: #26c4c9;}
 	width: 1100px;
 	height: 44px;
 	position: relative;
-	cursor: pointer;
+	
 	margin: 0 auto;
 }
 .login_l{
@@ -106,7 +106,7 @@ a:hover{color: #26c4c9;}
 	border-left: 1px solid #f0f0f0;
 }
 .uLeft .home{
-	cursor: pointer;
+	/*cursor: pointer;*/
 	width: 39px;
 	background: url(../images/index/icon.png) no-repeat;
 }
@@ -115,7 +115,6 @@ a:hover{color: #26c4c9;}
 	display: none;
 }
 .reach{
-	/*margin-top: -44px;*/
 	width: 257px;
 	height: 44px;
 	float: right;
@@ -131,8 +130,16 @@ a:hover{color: #26c4c9;}
 	float: left;
 	margin: 1px 0 0 0;
 }
+.info{
+	position: absolute;
+	right: 180px;
+	top: 44px;
+	z-index: 999999;
+	width: 200px;
+	height: 100px;
+}
 .reachbtn{
-	width: 46px;
+	width: 43px;
 	height: 44px;
 	display: block;
 	float: left;
@@ -192,7 +199,6 @@ a:hover{color: #26c4c9;}
 .footerTopCon2{ background:url(../images/regis/footer_bg.gif) repeat-x #fff top;}
 .fTit{ font-size:20px; color:#06c7d3;}
 .moreJingCai{ 
-	/*width: 200px;*/
 	margin:0 0 0 75px;float: left;}
 .moreJingCai ul{ margin:15px 0 0 0;}
 .moreJingCai ul li{ line-height:20px;}
