@@ -1,0 +1,131 @@
+.main{
+    width: 1100px;
+    height: 500px;
+    margin: 0 auto;
+}
+.loginTop{
+    width: 511px;
+    height: 500px;
+    padding: 0 0 22px 0;
+    margin: 0 auto;
+    border: 1px solid #E5E5E5;
+}
+.loginTop_top{
+    width: 511px;
+    height: 50px;
+    .ttop_text{
+        width: 511px;
+        height: 50px;
+        background-color: #f3f3f3;
+        font-size: 20px;
+        line-height: 50px;
+        padding: 0 0 0 20px;
+        color: #5c5c5c;
+        
+    }
+}
+.loginTop_input{
+    width: 511px;
+    height: 190px;
+    padding: 5px 0 0 46px;
+    form{
+        width: 465px;
+        height: 86px;
+        p{
+            width: 465px;
+            height: 35px;
+            margin-top: 16px;
+            span{
+                display: block;
+                width: 43px;
+                height: 35px;
+                float: left;
+                line-height: 35px;
+                text-align: left;
+                font-size: 14px;
+            }
+            input{
+                width: 255px;
+                height: 35px;
+                border: 1px solid #4A4A4A;
+                padding: 0 0 0 5px;
+                font-size: 14px;
+            }
+        }
+    }
+}
+.loginTop_input form p span:nth-child(3){
+    width: 160px;
+    float: right;
+}
+
+.rember{
+    width: 260px;
+    height: 25px;
+    margin: 10px 0 0 43px;
+    float: left;
+    font-size: 13px;
+}
+dl{
+    width: 204px;
+    height: 35px;
+    float: left;
+    margin: 10px 0 0 43px;
+    dt{
+        a{
+            display: block;
+            width: 102px;
+            height: 35px;
+            cursor: pointer;
+            background-color: #25c2c7;
+            float: left;
+            color: white;
+            letter-spacing: 10px;
+            text-align: center;
+            line-height: 35px;
+            font-size: 15px;
+            border-radius: 5px;
+        }
+    }
+    dd{
+        width: 102px;
+        height: 35px;
+        float: left;
+        text-align: center;
+        line-height: 35px;
+        a{
+            color: #25c2c7;
+            font-weight: 600;
+        }
+    }
+}
+dt a:hover{color: white;font-weight: 600;}
+dd a:hover{text-decoration:underline;}
+
+.loginTop_middle{
+    width: 509px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 14px;
+    margin: 10px 0;
+    background: url(/wawsai/images/regis/dashLine.gif) no-repeat;
+    a{
+        color: #229CA0;
+        margin: 0 5px;
+    }
+}
+.loginTop_middle a:hover{text-decoration: underline;}
+
+.loginTop_link{
+    width: 483px;
+    height: 135px;
+    margin: 0 0 0 28px;
+    a{
+        display: block;
+        width: 91px;
+        height: 35px;
+        float: left;
+        margin: 0 0 10px 18px;
+    }
+}

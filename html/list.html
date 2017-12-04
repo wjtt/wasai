@@ -2,8 +2,63 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title></title>
+		<title>商品列表页面</title>
+		<link rel="stylesheet" type="text/css" href="../css/base.css" />
+		<link rel="stylesheet" type="text/css" href="../css/dist/list.css" />
 	</head>
 	<body>
+		<div class="header"></div>
+		<div class="main">
+			<div class="main_box">
+				<div class="container">
+					<div class="tit"><h1>新品</h1></div>
+					<div class="goodsCon">
+						<ul class="menu">
+							<li class="f1 size"><a href="javascript:;">全部分类</a></li>
+							<li class="f1"><a href="javascript:;">服饰</a></li>
+							<li class="f1"><a href="javascript:;">饰品</a></li>
+							<li class="f1"><a href="javascript:;">鞋包</a></li>
+							<li class="f1"><a href="javascript:;">家具</a></li>
+							<li class="f1"><a href="javascript:;">数码</a></li>
+							<li class="f1"><a href="javascript:;">文具</a></li>
+							<li class="f1"><a href="javascript:;">玩偶</a></li>
+							<li class="f1"><a href="javascript:;">定制</a></li>
+							<li class="f1"><a href="javascript:;">艺术</a></li>
+							<li class="f1"><a href="javascript:;">民艺</a></li>
+							<li class="f1"><a href="javascript:;">植物食品</a></li>
+						</ul>
+						<div class="list">
+							<script type="text/html" id="goodList">
+								{{each shangping as shang}}
+									<div class="list_item">
+										<a class="img" href="details.html"><img src={{shang.img}}></a>
+										<h3><a class="tottip" href="details.html">{{shang.des}}</a></h3>
+										<div class="price">{{shang.price}}</div>
+										<div class="shoucang"><a class="ccar" href="javascript:void(0)" title="收藏到购物车">收藏到购物车</a></div>
+									</div>
+								{{/each}}
+							</script>
+	
+						</div>
+						<div class="xuhao">
+							<ul class="dibu">
+								<li class="dibu2 prev"><a href="javascript:void(0)"></a></li>
+								<li class="dibu2"><a href="javascript:void(0)">1</a></li>
+								<li class="dibu2"><a href="javascript:void(0)">2</a></li>
+								<li class="dibu2"><a href="javascript:void(0)">3</a></li>
+								<li class="dibu2"><a href="javascript:void(0)">4</a></li>
+								<li class="dibu2"><a href="javascript:void(0)">5</a></li>
+								<li class="dibu2"><a href="javascript:void(0)">6</a></li>
+								<li class="dibu2"><a href="javascript:void(0)">7</a></li>
+								<li class="dibu2"><a href="javascript:void(0)">...</a></li>
+								<li class="dibu2 next"><a href="javascript:void(0)"></a></li>	
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer"></div>
+		<script src="../lib/requirejs/require.js" data-main="../js/list"></script>
 	</body>
 </html>

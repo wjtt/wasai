@@ -1,0 +1,158 @@
+.main {
+  width: 100%;
+  height: 2682px;
+  background-color: #F6F6F6;
+  position: relative; }
+  .main .main_box {
+    position: absolute;
+    width: 100%;
+    height: 2602px;
+    background-color: white;
+    margin-top: 80px; }
+    .main .main_box .container {
+      width: 1100px;
+      height: 2602px;
+      margin: 0 auto; }
+      .main .main_box .container .tit {
+        width: 231px;
+        height: 66px;
+        background-color: #fff;
+        box-shadow: 3px 3px 0 0 #e5e5e5;
+        text-align: center;
+        line-height: 66px;
+        color: #999999;
+        margin: -20px auto 0; }
+        .main .main_box .container .tit h1 {
+          font-size: 28px;
+          font-weight: 600; }
+
+.goodsCon {
+  height: 2516px; }
+  .goodsCon .menu {
+    width: 1000px;
+    height: 40px;
+    margin: 40px auto;
+    line-height: 40px; }
+    .goodsCon .menu .f1 {
+      padding: 0 0 0 45px;
+      line-height: 40px;
+      height: 40px;
+      float: left;
+      font-size: 14px;
+      background: url(/wawsai/images/list/1.png) no-repeat 25px center; }
+
+.size {
+  background-image: none !important; }
+
+.size a {
+  color: #00CCCC; }
+
+.list {
+  height: 2330px;
+  margin-top: 32px;
+  padding-bottom: 70px; }
+  .list .list_item {
+    width: 242px;
+    height: 380px;
+    margin: 0 44px 0 0;
+    position: relative;
+    float: left; }
+    .list .list_item .img {
+      display: block;
+      width: 242px; }
+    .list .list_item h3 {
+      padding-top: 10px;
+      width: 242px;
+      height: 50px;
+      font-size: 13px;
+      line-height: 20px; }
+    .list .list_item .price {
+      margin: 0 auto;
+      width: 144px;
+      height: 20px;
+      line-height: 20px;
+      text-align: center;
+      color: #ff781f;
+      font-weight: 600; }
+    .list .list_item .shoucang {
+      width: 120px;
+      height: 50px;
+      margin: 0 auto;
+      border-radius: 5px;
+      background-color: #ff781f;
+      text-align: center;
+      line-height: 50px;
+      font-size: 14px; }
+      .list .list_item .shoucang .ccar {
+        display: block;
+        color: white;
+        width: 120px;
+        height: 50px; }
+
+.list_item:nth-child(4) {
+  margin-right: 0px; }
+
+.list_item:nth-child(8) {
+  margin-right: 0px; }
+
+.list_item:nth-child(12) {
+  margin-right: 0px; }
+
+.list_item:nth-child(16) {
+  margin-right: 0px; }
+
+.list_item:nth-child(20) {
+  margin-right: 0px; }
+
+.list_item:nth-child(24) {
+  margin-right: 0px; }
+
+.xuhao {
+  width: 1100px;
+  height: 100px;
+  padding-top: 35px; }
+  .xuhao .dibu {
+    display: block;
+    width: 430px;
+    height: 40px;
+    margin: 0 auto 10px; }
+    .xuhao .dibu .dibu2 {
+      float: left;
+      background-image: none;
+      padding: 0 0 0 7px;
+      display: inline-block;
+      width: 36px;
+      height: 36px;
+      font-size: 20px;
+      padding-left: 12px;
+      font-weight: 600;
+      line-height: 36px;
+      border-radius: 50%; }
+      .xuhao .dibu .dibu2 a {
+        color: #00cccc; }
+
+.xuhao .dibu .dibu2:nth-child(2) {
+  background-color: #00cccc; }
+
+.xuhao .dibu .dibu2:nth-child(2) a {
+  color: white; }
+
+.xuhao .dibu .dibu2:hover {
+  background-color: #00cccc; }
+
+.xuhao .dibu .dibu2 a:hover {
+  color: white; }
+
+.xuhao .dibu .prev {
+  width: 30px;
+  height: 33px;
+  border-radius: 0px;
+  background: url(/wawsai/images/list/prev.png) no-repeat 0px 0px; }
+
+.xuhao .dibu .next {
+  width: 30px;
+  height: 33px;
+  border-radius: 0px;
+  background: url(/wawsai/images/list/next.png) no-repeat 0px 0px; }
+
+/*# sourceMappingURL=list.css.map */

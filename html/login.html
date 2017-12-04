@@ -2,8 +2,56 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title></title>
+		<title>登录页面</title>
+		<link rel="stylesheet" type="text/css" href="../css/base.css" />
+		<link rel="stylesheet" type="text/css" href="../css/dist/login.css" />
 	</head>
 	<body>
+		<div class="header"></div>
+		<div class="main">
+			<div class="loginTop">
+				<div class="loginTop_top">
+					<div class="ttop_text">登录哇塞网</div>
+				</div>
+				<div class="loginTop_input">
+					<form method="get" id="login_form1" onsubmit="return checkf();" action="">
+						<p>
+							<span class="ms_yahei">邮箱：</span>
+							<input type="text" id="email" name="email" onblur="" placeholder="请使用注册邮箱登录">
+							<span id="email_msg"></span>
+						</p>
+						<p>
+							<span class="ms_yahei">密码：</span>
+							<input type="password" id="password" name="password" onblur="">
+							<span id="password_msg"></span>
+						</p>
+						<span class="rember ms_yahei">
+							<input type="checkbox" name="checkbox3" id="checkbox3" value="1">记住我一周（在公共场合慎用此功能）
+						</span>
+						<dl class="login_button">
+							<dt><a onclick="newlogin()" class="ms_yahei">登录</a></dt>
+							<dd><a href="php" title="忘记密码" class="ms_yahei">忘记密码？</a></dd>
+						</dl>
+					</form>
+				</div>
+				<div class="loginTop_middle">
+					还没有哇塞网账号？
+					<a href="php" class="ms_yahei">立即注册</a>或     使用以下账号登录
+				</div>
+				<div class="loginTop_link">
+					<a href="php"><img src="../images/regis/denglu_qq.gif"></a>
+					<a href="php"><img src="../images/regis/denglu_sina.gif"></a>
+					<a href="php"><img src="../images/regis/denglu_icon1_16.gif"></a>
+					<a href="php"><img src="../images/regis/denglu_icon1_18.gif"></a>
+					<a href="php"><img src="../images/regis/denglu_baidu.gif"></a>
+					<a href="php"><img src="../images/regis/denglu_douban.gif"></a>
+					<a href="php"><img src="../images/regis/denglu_kaixin.gif"></a>
+					<a href="php"><img src="../images/regis/denglu_shengda.png"></a>
+					<a href="php"><img src="../images/regis/denglu_renren.gif"></a>
+				</div>
+			</div>
+		</div>
+		<div class="footer"></div>
+		<script src="../lib/requirejs/require.js" data-main="../js/login"></script>
 	</body>
 </html>

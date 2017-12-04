@@ -1,0 +1,18 @@
+{
+	"status":1,
+	"message":"success",
+	"data":[
+		{
+			"list":[
+				{"img1":"images/index/idea1.jpg","img2":"images/index/DesMore.png","div":"leftJ","color":"#f59165","title":"逃逃密TAOTAOMIX"},
+				{"img1":"images/index/idea2.jpg","img2":"images/index/DesMore.png","div":"leftJ","color":"#c4675f","title":"山背后"},
+				{"img1":"images/index/idea3.jpg","img2":"images/index/DesMore.png","div":"rightJ","color":"#deb38b","title":"PTLIFE平田"},
+				{"img1":"images/index/idea4.jpg","img2":"images/index/DesMore.png","div":"rightJ","color":"#6977b2","title":"问童子"},
+				{"img1":"images/index/idea5.jpg","img2":"images/index/DesMore.png","div":"leftJ","color":"#55a5b9","title":"Maggie"},
+				{"img1":"images/index/idea6.jpg","img2":"images/index/DesMore.png","div":"leftJ","color":"#f075a6","title":"士多"}
+			]
+		}
+		
+		
+	]
+}

@@ -1,0 +1,18 @@
+{
+	"status":1,
+	"message":"success",
+	"data":[
+		{
+			"title":"定制推荐",
+			"dingzhi":[
+				{"img":"images/index/ding1.jpg","podTip":"JUST2YOU手表定制"},
+				{"img":"images/index/ding2.jpg","podTip":"若爱，请深爱"},
+				{"img":"images/index/ding3.jpg","podTip":"与书为伴  朴素简静"},
+				{"img":"images/index/ding4.jpg","podTip":"【忆笑颜】紫光檀木红珊瑚吊坠"},
+				{"img":"images/index/ding5.jpg","podTip":"古着范"},
+				{"img":"images/index/ding6.jpg","podTip":"一木一生"},
+				{"img":"images/index/ding7.jpg","podTip":"经典款皮靴"}
+			]
+		}
+	]
+}

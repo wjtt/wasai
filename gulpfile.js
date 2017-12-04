@@ -1,3 +1,4 @@
+//require相当于nodejs中用到的require
 var gulp = require("gulp"), // 引入 gulp 模块
 	minifycss = require("gulp-clean-css"), // 引入 gulp-clean-css 模块
 	minifyjs = require("gulp-uglify"), // 引入 gulp-gulify 模块

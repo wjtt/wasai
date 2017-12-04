@@ -1,0 +1,10 @@
+{
+	"status":1,
+	"message":"success",
+	"data":[
+		{"img":"images/index/jing1.jpg","podTitle":"古典用品桃花润面霜"},
+		{"img":"images/index/jing2.jpg","podTitle":"泰银海底总动员脚链"},
+		{"img":"images/index/jing3.jpg","podTitle":"黑白纹路时尚钱夹"},
+		{"img":"images/index/jing4.jpg","podTitle":"有温度的保护木壳"}
+	]
+}

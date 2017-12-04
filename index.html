@@ -1,30 +1,238 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="UTF-8">
 		<title>哇塞网首页</title>
-		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/carousel.css"/>
+		<link rel="stylesheet" type="text/css" href="css/dist/index.css" />
 	</head>
+
 	<body>
 		<div class="header"></div>
 		<div class="main">
-			<h1>哈哈哈哈</h1>
-			<h1>哈哈哈哈</h1>
-			<h1>哈哈哈哈</h1>
-			<h1>哈哈哈哈</h1>
-			<h1>哈哈哈哈</h1>
-			<h1>哈哈哈哈</h1>
-			<h1>哈哈哈哈</h1>
-			<h1>哈哈哈哈</h1>
-			<h1>哈哈哈哈</h1>
-			<h1>哈哈哈哈</h1>
-			<h1>哈哈哈哈</h1>
-			<h1>哈哈哈哈</h1>
-			<h1>哈哈哈哈</h1>
-			<h1>哈哈哈哈</h1>
-			<h1>哈哈哈哈</h1>
+			<!--轮播图-->
+			<div id="myCarousel" class="carousel slide">
+				<ol class="carousel-indicators">
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+					<li data-target="#myCarousel" data-slide-to="2"></li>
+					<li data-target="#myCarousel" data-slide-to="3"></li>
+					<li data-target="#myCarousel" data-slide-to="4"></li>
+					<li data-target="#myCarousel" data-slide-to="5"></li>
+				</ol>
+				<!-- 要轮播的图片(Carousel items) -->
+				<div class="carousel-inner">
+					<div class="active item"><img src="images/index/banner1.jpg" alt="First slide"></div>
+					<div class="item"><img src="images/index/banner2.jpg" alt="Second slide"/></div>
+					<div class="item"><img src="images/index/banner3.jpg" alt="third slide"/></div>
+					<div class="item"><img src="images/index/banner4.jpg" alt="fourth slide"/></div>
+					<div class="item"><img src="images/index/banner5.jpg" alt="fifth slide"/></div>
+					<div class="item"><img src="images/index/banner6.jpg" alt="sixth slide"/></div>
+				</div>
+				<!--左右翻页的按钮 (Carousel nav) -->
+				<p class="carousel-control left" href="#myCarousel" data-slide="prev"></p>
+				<p class="carousel-control right" href="#myCarousel" data-slide="next"></p>
+			</div>
+			<!--主体内容-->
+			<div class="container_top">
+				<div class="box">
+					<!--当日精选-->
+					<h2>当日精选</h2>
+					<div class="dangrijingxuan">	
+						<script type="text/html" id="jingxuan">
+							{{each goods as god}}
+								<div class="prolist">
+									<a href="index.html" target="_blank">
+										<img src={{god.img}} alt={{god.title}}/>
+										<div class="pod">
+											<div class="podTitle">{{god.podTitle}}</div>
+										</div>
+									</a>
+								</div>
+							{{/each}}
+						</script>
+					</div>
+					<!--定制推荐-->
+					<div class="dingzhi_box"></div>
+					<script type="text/html" id="dingzhituijian">
+						{{each dings as ding}}
+							<h2>{{ding.title}}</h2>
+							{{each ding.dingzhi as hao}}
+								<div class="prolist">
+									<a href="index.html" target="_blank">
+										<img src={{hao.img}} alt={{hao.podTip}}/>
+										<div class="pod">
+											<div class="podTitle">{{hao.podTip}}</div>
+										</div>
+									</a>
+								</div>
+							{{/each}}
+						{{/each}}
+					</script>
+					<!--设计精选-->
+					<div class="sheji_box"></div>
+					<script type="text/html" id="shejijingxuan">
+						{{each shejis as sj}}
+							<h2>{{sj.title}}</h2>
+							{{each sj.sheji as hao}}
+								<div class="prolist">
+									<a href="index.html" target="_blank">
+										<img src={{hao.img}} alt={{hao.podTip}}/>
+										<div class="pod">
+											<div class="podTitle">{{hao.podTip}}</div>
+										</div>
+									</a>
+								</div>
+							{{/each}}	
+						{{/each}}	
+					</script>
+					<!--闪购-->
+					<div class="quick">
+						<h2>闪购<a href="#"></a></h2>
+					</div>
+					<!--总有些东西在激励你-->
+					<div class="encourage">
+						<h2>总有些东西在激励着你</h2>
+						<div class="prolist">
+							<a href="index.html" target="_blank">
+								<img src="images/index/shan1.jpg" alt="聚划算  聚奇趣"/>
+								<div class="pod">
+									<div class="podTitle">聚划算  聚奇趣</div>
+								</div>
+							</a>
+						</div>
+						<div class="prolist">
+							<a href="index.html" target="_blank">
+								<img src="images/index/shan2.jpg" alt="文艺复古超有范"/>
+								<div class="pod">
+									<div class="podTitle">文艺复古超有范</div>
+								</div>
+							</a>
+						</div>
+						<div class="prolist">
+							<a href="index.html" target="_blank">
+								<img src="images/index/shan3.jpg" alt="享手工  爱孤品"/>
+								<div class="pod">
+									<div class="podTitle">享手工  爱孤品</div>
+								</div>
+							</a>
+						</div>
+					</div>
+					<!--他们会让你的生活更有创意-->
+					<div class="idea">
+						<h2>他们会让你的生活更有创意
+							<a href="#"></a>
+						</h2>
+						<ul class="designerList">
+							<script type="text/html" id="desin">
+								{{each ideas as idea}}
+									{{each idea.list as d}}
+									<li>
+										<a href="javascript:;" target="_blank"><img src={{d.img1}} alt={{d.title}}>
+											<div class={{d.div}}>
+												<p style={{d.color}}></p>
+												<dl><dt><img src={{d.img2}}/></dt>
+													<dd>{{d.title}}</dd>
+												</dl>
+											</div>
+										</a>
+									</li>
+									{{/each}}
+								{{/each}}
+							</script>
+						</ul>
+					</div>
+					
+					<!--创意画报-->
+					<div class="paper">
+						<h2>创意画报<a href="#"></a></h2>
+						<div class="chuangyi">
+							<div class="huabaolist first">
+								<a href="javascript:;" target="_blank">
+									<img src="images/index/hua1.jpg" />
+									<div class="pod"><div class="podTitle">不要世纪婚礼~~~~只想牵手旅行</div></div>
+								</a>
+							</div>
+							<div class="huabaolist">
+								<a href="javascript:;" target="_blank">
+									<img src="images/index/hua2.jpg" />
+									<div class="pod"><div class="podTitle">【枫恋雅阁】原创玉兰花清新系列发饰</div></div>
+								</a>
+							</div>
+							<div class="huabaolist">
+								<a href="javascript:;" target="_blank">
+									<img src="images/index/hua3.jpg" />
+									<div class="pod"><div class="podTitle">【枫恋雅阁】原创玉兰花清新系列发饰</div></div>
+								</a>
+							</div>
+							<div class="huabaolist">
+								<a href="javascript:;" target="_blank">
+									<img src="images/index/hua4.jpg" />
+									<div class="pod"><div class="podTitle">【枫恋雅阁】原创玉兰花清新系列发饰</div></div>
+								</a>
+							</div>
+							<div class="huabaolist">
+								<a href="javascript:;" target="_blank">
+									<img src="images/index/hua5.jpg" />
+									<div class="pod"><div class="podTitle">【枫恋雅阁】原创玉兰花清新系列发饰</div></div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container_bottom">
+				<div class="bottom_box">
+					<div class="updata">
+						<h2>加入变革，换新自我<a href="#"></a></h2>
+						<div class="uplist">
+							<a href="javascript:;" target="_blank">
+								<img src="images/index/bian1.jpg">
+								<div class="up_pod"><div class="up_podtitle">定制独一无二的产品</div></div>
+							</a>
+						</div>
+						<div class="uplist">
+							<a href="javascript:;" target="_blank">
+								<img src="images/index/bian2.jpg">
+								<div class="up_pod"><div class="up_podtitle">定制独一无二的产品</div></div>
+							</a>
+						</div>
+						<div class="uplist">
+							<a href="javascript:;" target="_blank">
+								<img src="images/index/bian3.jpg">
+								<div class="up_pod"><div class="up_podtitle">定制独一无二的产品</div></div>
+							</a>
+						</div>
+					</div>
+					<div class="qiang">
+						<h2>设计品牌墙<a href="#"></a></h2>
+						<div class="piqng_list">
+							<a href="javascript:;"><img src="images/index/ping1.jpg"></a>
+							<a href="javascript:;"><img src="images/index/ping2.jpg"></a>
+							<a href="javascript:;"><img src="images/index/ping3.jpg"></a>
+							<a href="javascript:;"><img src="images/index/ping4.jpg"></a>
+							<a href="javascript:;"><img src="images/index/ping5.jpg"></a>
+							<a href="javascript:;"><img src="images/index/ping6.jpg"></a>
+							<a href="javascript:;"><img src="images/index/ping7.jpg"></a>
+							<a href="javascript:;"><img src="images/index/ping8.jpg"></a>
+							<a href="javascript:;"><img src="images/index/ping9.jpg"></a>
+							<a href="javascript:;"><img src="images/index/ping10.png"></a>
+							<a href="javascript:;"><img src="images/index/ping11.jpg"></a>
+							<a href="javascript:;"><img src="images/index/ping12.jpg"></a>
+							<a href="javascript:;"><img src="images/index/ping13.jpg"></a>
+							<a href="javascript:;"><img src="images/index/ping14.jpg"></a>
+							<a href="javascript:;"><img src="images/index/ping15.jpg"></a>
+							<a href="javascript:;"><img src="images/index/ping16.jpg"></a>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
-		
+
 		<div class="footer"></div>
+		<script src="lib/requirejs/require.js" data-main="js/index"></script>
 	</body>
+
 </html>

@@ -1,0 +1,18 @@
+{
+	"status":1,
+	"message":"success",
+	"data":[
+		{
+			"title":"设计精选",
+			"sheji":[
+				{"img":"images/index/she1.jpg","podTip":"田园竹编花蕾吊灯"},
+				{"img":"images/index/she2.jpg","podTip":"轻奢！独家手工，独家定制"},
+				{"img":"images/index/she3.jpg","podTip":"复古植鞣皮大款马鞍包"},
+				{"img":"images/index/she4.jpg","podTip":"超纤皮革软面记事本"},
+				{"img":"images/index/she5.jpg","podTip":"可定制马赛克爱情海台灯"},
+				{"img":"images/index/she6.jpg","podTip":"随手拿起，走进童话世界"},
+				{"img":"images/index/she7.jpg","podTip":"九口山旅行记事本"}
+			]
+		}
+	]
+}

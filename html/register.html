@@ -1,9 +1,135 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="UTF-8">
-		<title></title>
+		<title>注册页面</title>
+		<link rel="stylesheet" type="text/css" href="../css/base.css" />
+		<link rel="stylesheet" type="text/css" href="../css/dist/register.css" />
 	</head>
+
 	<body>
+		<div class="header"></div>
+		<div class="main">
+			<div class="main_box">
+				<div class="zhuce">
+					<div class="left">
+						<div class="left_box">
+							<span>注册哇塞网</span>
+							<p>喜欢手工原创设计的快加入我们！一起寻找商品，挖掘特色小店，结识志趣相投的人</p>
+							<form name="" id="register_form" method="post" action="">
+								<table class="wai" cellpadding="0" cellspacing="0">
+									<tbody>
+										<tr class="waitr">
+											<td class="wf">
+												<table class="nei" border="0" cellpadding="0" cellspacing="0">
+													<tbody>
+														<tr>
+															<td class="neibutd1">电子邮箱:</td>
+															<td class="neibutd2"><input type="text" name="email" id="email" class="btn_zn"/></td>
+															<td class="neibutd3">
+																<label class="field_notice">请输入一个用于登录的邮箱地址</label>
+																<label class="checking" id="cheching_email">检查中...</label>
+															</td>
+														</tr>
+														<tr>
+															<td class="neibutd1">取个昵称:</td>
+															<td class="neibutd2"><input type="text" name="user_name" id="user_name" class="btn_zn"/></td>
+															<td class="neibutd3">
+																<label class="field_notice">用于登录的名字</label>
+																<label class="checking" id="cheching_email">检查中...</label>
+															</td>
+														</tr>
+														<tr>
+															<td class="neibutd1">设置密码:</td>
+															<td class="neibutd2"><input type="password" name="password" id="password" class="btn_zn"/></td>
+															<td class="neibutd3">
+																<label class="field_notice">您的密码</label>
+																<label class="checking" id="cheching_email">检查中...</label>
+															</td>
+														</tr>
+														<tr>
+															<td class="neibutd1">确认密码:</td>
+															<td class="neibutd2"><input type="password" name="password_confirm" id="password_confirm" class="btn_zn"/></td>
+															<td class="neibutd3">
+																<label class="field_notice">重复输入您的密码</label>
+																<label class="checking" id="cheching_email">检查中...</label>
+															</td>
+														</tr>
+														<tr>
+															<td class="neibutd1">性别:</td>
+															<td class="neibutd2 sex">
+																<input type="radio" name="gebder" value="2" checked="checked"/>&nbsp;女
+																<input type="radio" name="gebder" value="1"/>&nbsp;男
+															</td>
+															<td class="neibutd3">
+																<label class="field_notice"></label>
+																<label class="checking" id="cheching_email">检查中...</label>
+															</td>
+														</tr>
+														<tr>
+															<td class="neibutd1">验证码:</td>
+															<td class="neibutd2 yanzheng">
+																<input type="text" name="captcha" id="captcha" class="btn_zn2"/>
+																<a href="javascript:;" class="renewedl"></a>
+															</td>
+															<td class="neibutd3">
+																<label class="field_notice">点击更换</label>
+																<label class="checking" id="cheching_email">检查中...</label>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</td>
+										</tr>
+										<tr class="waitr2"><td></td></tr>
+										<tr class="waitr3">
+											<td>
+												<table border="0" cellpadding="0" cellspacing="0">
+													<tbody>
+														<tr class="agre"><td>
+															<input id="clause" type="checkbox" name="agree" value="1" />
+															<label class="agree">我已阅读并同意
+																<a href="javascript" target="_blank" class="agreement">《哇塞网用户协议》</a>
+															</label>
+														</td></tr>
+														<tr class="liji"><td>
+															<input type="button" value="注册" name="submit" id="submit" class="login_nbtn" title="立即注册" onclick="sub_form();" />
+														</td></tr>
+													</tbody>
+												</table>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</form>
+						</div>
+					</div>
+					<div class="right">
+						<div class="dl_kszc">
+							<p>已有哇塞网账号</p>
+							<a href="login.html"><input type="button" value="登录" /></a>
+						</div>
+						<div class="else">
+							<div class="link">
+								<p>你也可以用站外账号登录</p>
+								<a href="php"><img src="../images/regis/denglu_qq.gif"></a>
+								<a href="php"><img src="../images/regis/denglu_sina.gif"></a>
+								<a href="php"><img src="../images/regis/denglu_icon1_16.gif"></a>
+								<a href="php"><img src="../images/regis/denglu_icon1_18.gif"></a>
+								<a href="php"><img src="../images/regis/denglu_baidu.gif"></a>
+								<a href="php"><img src="../images/regis/denglu_douban.gif"></a>
+								<a href="php"><img src="../images/regis/denglu_kaixin.gif"></a>
+								<a href="php"><img src="../images/regis/denglu_shengda.png"></a>
+								<a href="php"><img src="../images/regis/denglu_renren.gif"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer"></div>
+		<script src="../lib/requirejs/require.js" data-main="../js/register"></script>
 	</body>
+
 </html>
