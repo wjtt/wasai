@@ -1,0 +1,430 @@
+.main {
+  font-size: 12px;
+  height: 22353px;
+  width: 100%; }
+  .main .main_box {
+    position: relative;
+    width: 1100px;
+    height: 22353px;
+    margin: 0 auto; }
+    .main .main_box .goodsWarp {
+      position: absolute;
+      width: 1100px;
+      height: 22283px;
+      margin: 70px auto 0;
+      border: 1px solid red;
+      padding-bottom: 200px; }
+      .main .main_box .goodsWarp .pp {
+        display: none; }
+
+.storeIndexConL {
+  height: 1671px;
+  width: 242px;
+  float: left; }
+  .storeIndexConL .sICLinfo {
+    height: 560px;
+    background-color: #f6f6f6;
+    padding: 20px 0 0 0; }
+
+.sICLinfo h2 {
+  height: 30px;
+  line-height: 30px;
+  font-size: 20px;
+  color: #5c5c5c;
+  padding: 0 15px; }
+.sICLinfo .store_info_list {
+  width: 212px;
+  height: 134px;
+  margin: 15px 0 0 15px;
+  padding-bottom: 8px;
+  line-height: 25px;
+  border-bottom: 1px solid #e5e5e5; }
+  .sICLinfo .store_info_list li span {
+    color: #898989;
+    float: left; }
+  .sICLinfo .store_info_list li a img {
+    width: 16px;
+    height: 16px;
+    float: left;
+    margin: 5px 0 0 0; }
+
+.clear {
+  clear: both; }
+
+.store_info_other {
+  height: 121px;
+  width: 212px;
+  border-bottom: 1px dashed #e5e5e5;
+  margin: 15px 0 0 15px;
+  padding-bottom: 15px; }
+  .store_info_other dl dt {
+    width: 66px;
+    height: 66px;
+    float: left; }
+    .store_info_other dl dt a img {
+      width: 60px;
+      height: 60px; }
+  .store_info_other dd {
+    width: 134px;
+    height: 47px;
+    float: left;
+    margin: 10px 0 0 10px;
+    color: #898989; }
+    .store_info_other dd .ms_yahei {
+      width: 134px;
+      height: 20px;
+      margin-bottom: 5px; }
+      .store_info_other dd .ms_yahei span {
+        display: block;
+        float: right;
+        width: 96px;
+        height: 16px; }
+        .store_info_other dd .ms_yahei span a {
+          float: left;
+          width: 96px;
+          height: 16px;
+          color: #229CA0; }
+    .store_info_other dd input {
+      line-height: 18px;
+      color: #8A8A8A; }
+    .store_info_other dd a {
+      width: 77px;
+      height: 22px; }
+      .store_info_other dd a img {
+        width: 77px;
+        height: 22px; }
+
+.store_num_info {
+  height: 24px;
+  margin: 15px 0 0 0;
+  color: #898989; }
+  .store_num_info em {
+    font-style: normal;
+    font-size: 25px;
+    color: #1db9be; }
+
+.brand_story {
+  height: 135px;
+  margin: 15px 0 0 15px; }
+  .brand_story p {
+    height: 66px;
+    line-height: 20px;
+    color: #9C9C9C; }
+    .brand_story p img {
+      float: left;
+      margin-right: 8px;
+      margin-top: 4px; }
+  .brand_story .goodsInfoBtn {
+    height: 34px;
+    margin: 35px 0; }
+    .brand_story .goodsInfoBtn a {
+      display: block;
+      width: 98px;
+      height: 32px;
+      border: 1px solid #dcdcdc;
+      line-height: 32px;
+      text-align: center;
+      float: left;
+      border-radius: 5px;
+      background-color: #ebebeb; }
+
+.userSendMessage {
+  height: 40px;
+  padding: 17px 0 20px 84px; }
+  .userSendMessage .messageBg {
+    display: block;
+    width: 20px;
+    height: 12px;
+    float: left;
+    margin: 4px 5px 0 0;
+    background: url(/wawsai/images/details/sixin1.png) no-repeat 0px -1px; }
+  .userSendMessage .messageSend {
+    width: 100px;
+    height: 20px;
+    line-height: 20px;
+    color: #4A4A4A; }
+
+.sICLcate {
+  height: 91px;
+  padding: 0 11px 17px;
+  margin: 20px 0 0 0;
+  background-color: #f6f6f6; }
+  .sICLcate h3 {
+    height: 31px;
+    line-height: 41px;
+    font-size: 14px;
+    color: #5c5c5c; }
+  .sICLcate ul {
+    background-color: white; }
+  .sICLcate .cate_if {
+    height: 32px;
+    border-bottom: 1px solid #5C5C5C;
+    margin: 10px 0 0 0;
+    font-size: 14px;
+    background: url(/wawsai/images/details/right.png) no-repeat 0px center; }
+    .sICLcate .cate_if span {
+      float: right;
+      margin-right: 8px;
+      color: #898989;
+      font-size: 14px;
+      line-height: 30px; }
+    .sICLcate .cate_if a {
+      background-color: white;
+      display: block;
+      height: 30px;
+      float: left;
+      color: #229ca0;
+      margin: 0 0 0 17px;
+      line-height: 32px; }
+
+.goodsHotLove {
+  height: 980px;
+  margin-top: 20px; }
+  .goodsHotLove .title {
+    height: 42px;
+    font-size: 14px;
+    line-height: 42px; }
+    .goodsHotLove .title a {
+      display: block;
+      width: 121px;
+      height: 40px;
+      color: #229CA0;
+      background-color: #f5f5f1;
+      line-height: 40px;
+      text-align: center;
+      float: left; }
+  .goodsHotLove .part {
+    display: none;
+    width: 240px;
+    height: 938px;
+    border: 1px solid #d9d9d9;
+    padding: 7px 12px 19px 9px; }
+
+.goodsHotLove .title a:hover {
+  background-color: grey;
+  border-top: 2px solid #229CA0; }
+
+.left {
+  background-color: grey !important;
+  border-top: 2px solid #229CA0; }
+
+.part dl {
+  margin-left: 10px;
+  margin-bottom: 3px; }
+  .part dl dt {
+    width: 81px;
+    height: 81px;
+    border: 1px solid #d9d9d9;
+    padding: 5px 0 0 5px;
+    float: left; }
+    .part dl dt a {
+      display: block;
+      width: 69px;
+      height: 69px; }
+      .part dl dt a img {
+        width: 69px;
+        height: 69px; }
+  .part dl dd {
+    width: 128px;
+    height: 81px;
+    margin-left: 80px;
+    padding-left: 5px; }
+    .part dl dd a {
+      display: block;
+      padding-top: 10px;
+      color: #229CA0;
+      height: 40px;
+      line-height: 20px; }
+    .part dl dd span {
+      color: #fd834c; }
+
+.part1 {
+  display: block !important; }
+
+.logoTip1 {
+  display: none !important;
+  width: 491px;
+  background: white;
+  z-index: 99999;
+  position: absolute;
+  display: block;
+  padding: 0 0 22px 0; }
+
+.logoTip1-top {
+  height: 49px; }
+
+.logoTip1-top-close {
+  width: 51px;
+  float: right; }
+
+.logoTip1-top-close a {
+  width: 51px;
+  height: 49px;
+  float: right;
+  background: url(/wawsai/images/details/twoLevelPage.png) no-repeat -1379px 0px;
+  text-indent: -9999px; }
+
+.logoTip1-top-close a:hover {
+  width: 51px;
+  height: 49px;
+  float: right;
+  background: url(/wawsai/images/details/twoLevelPage.png) no-repeat -1328px 0px;
+  text-indent: -9999px; }
+
+.logoTip1-top-text {
+  width: 440px;
+  height: 49px;
+  float: left;
+  background: url(/wawsai/images/details/top_line.gif) repeat-x;
+  font-size: 20px;
+  line-height: 49px;
+  padding: 0 0 0 20px;
+  color: #5c5c5c; }
+
+.logoTip1-button {
+  width: 204px;
+  height: 35px;
+  float: left;
+  margin: 10px 0 0 43px;
+  display: inline; }
+
+.logoTip1-button dt, .logoTip1-button dd {
+  text-align: center;
+  line-height: 35px; }
+
+.logoTip1-button dt a, .logoTip1-sendButton a, .logoTip1-makeSure a {
+  border-radius: 5px;
+  width: 102px;
+  height: 35px;
+  float: left;
+  color: white;
+  font-size: 15px;
+  background: #00CCCC;
+  text-align: center;
+  line-height: 35px; }
+
+.logoTip1-button dt a:hover {
+  color: white; }
+
+.logoTip1-button dd a {
+  color: #229ca0; }
+
+.logoTip1-button dd a:hover, .logoTip1-dash a:hover {
+  text-decoration: underline;
+  color: #229ca0; }
+
+.logoTip1-addressee {
+  width: 484px;
+  padding: 30px 0 0 27px; }
+
+.logoTip1-messageBody {
+  width: 484px;
+  height: 152px;
+  padding: 0 0 0 5px;
+  margin: 22px 0 0 0; }
+
+.logoTip1-messageBody dt {
+  width: 56px;
+  float: left;
+  line-height: 10px; }
+
+.logoTip1-messageBody dd {
+  width: 368px;
+  height: 150px;
+  border: 1px solid #9c9c9c;
+  float: left; }
+
+.logoTip1-messageBody dd textarea {
+  width: 358px;
+  height: 140px;
+  border: none;
+  resize: none;
+  padding: 5px 0 0 5px; }
+
+.logoTip1-sendButton {
+  width: 429px;
+  height: 35px;
+  padding: 0 0 0 82px;
+  margin: 15px 0 0 0; }
+
+.logoTip1-sendButton span {
+  width: 220px;
+  float: left;
+  height: 35px;
+  text-align: right;
+  line-height: 45px; }
+
+.logoTip1-sendButton span em {
+  font-style: normal;
+  color: #229ca0; }
+
+.goodsInfoR {
+  width: 828px;
+  height: 22330px;
+  float: right; }
+  .goodsInfoR .right_top {
+    width: 828px;
+    height: 463px; }
+
+.right_top_left {
+  width: 420px;
+  height: 490px;
+  float: left; }
+
+#gal1 img {
+  border: 1px solid #ccc; }
+
+.active img {
+  border: 1px solid #333 !important; }
+
+#img_0 {
+  width: 418px;
+  height: 360px;
+  border: 1px solid gray; }
+
+#gal1 img {
+  width: 100px;
+  height: 100px; }
+
+.love {
+  width: 74px;
+  height: 40px;
+  position: absolute;
+  right: 420px;
+  top: 23px;
+  background: url(/wawsai/images/details/icon5.png) no-repeat 0px 0px; }
+  .love .lo {
+    width: 37px;
+    height: 37px;
+    display: block;
+    float: left; }
+  .love .jishu {
+    float: left;
+    width: 37px;
+    height: 37px;
+    text-align: center;
+    line-height: 37px;
+    color: #fff;
+    font-size: 14px; }
+
+.fenxiang {
+  width: 322px;
+  height: 20px; }
+  .fenxiang .more .text {
+    width: 48px;
+    height: 20px;
+    display: block;
+    float: left;
+    line-height: 20px; }
+  .fenxiang .more a {
+    display: block;
+    width: 20px;
+    height: 16px;
+    float: left;
+    background: url(/wawsai/images/details/jiathis_ico.png) no-repeat; }
+
+.more:nth-child(1) .xi {
+  background-position: 2px -560px; }
+
+.more:nth-child(2) .xi {
+  background-position: 2px -560px !important; }

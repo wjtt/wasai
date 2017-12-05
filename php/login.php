@@ -1,4 +1,4 @@
-<?
+<?php
 	$nickname = $_POST["nickname"];
 	$password = $_POST["password"];
 	$email=$_POST["email"];
@@ -10,7 +10,8 @@
 	mysql_query("set names utf8");
 	// 选择数据库
 	mysql_select_db("wawsai");
-	$sql = "SELECT email, password, FROM users WHERE email='$email' AND password='$password'";
+	$sql = "SELECT email, password FROM users WHERE email='$email' AND password='$password'";
+//	echo 'sql'
 	// 执行查询，返回查询结果集
 	$result = mysql_query($sql);
 	// 读取查询结果中的数据

@@ -68,7 +68,7 @@ require(["config"],function(){
 					console.log(resdata)
 					var val = resdata.showapi_res_body;
 					$("#gen_code").attr("src",val.image);
-					$("#gen_code").attr("sid",val.sid); // 添加自定义属性，保存关联标识
+					$("#gen_code").data("sid",val.sid); // 添加自定义属性，保存关联标识
 				}
 			});
 		}
@@ -84,7 +84,7 @@ require(["config"],function(){
 					showapi_appid : "48344",
 					showapi_sign : "09168fc73b1748ea9fc1f278a590cb83",
 					checkcode : $("#input_code").val(),
-					sid : $("#gen_code").sid
+					sid : $("#gen_code").data("sid")
 				},
 				dataType : "json",
 				success : function(data){

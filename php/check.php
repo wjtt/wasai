@@ -1,4 +1,4 @@
-<?
+<?php
 	//检查昵称是否被占用
 	$nickname = $_GET["$nickname"];
 

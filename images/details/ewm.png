@@ -1,0 +1,144 @@
+<?php
+//获取UA信息
+$ua = $_SERVER['HTTP_USER_AGENT'];
+//将恶意USER_AGENT存入数组
+$now_ua = array('yisouspider','FeedDemon ','BOT/0.1 (BOT for JCE)','CrawlDaddy ','Java','Feedly','UniversalFeedParser','ApacheBench','Swiftbot','ZmEu','Indy Library','oBot','jaunty','YandexBot','AhrefsBot','MJ12bot','WinHttp','EasouSpider','HttpClient','Microsoft URL Control','YYSpider','jaunty','Python-urllib','lightDeckReports Bot');
+//禁止空USER_AGENT，dedecms等主流采集程序都是空USER_AGENT，部分sql注入工具也是空USER_AGENT
+if(!$ua) {
+    header("Content-type: text/html; charset=utf-8");
+    die('请勿采集本站！');
+}else{
+    foreach($now_ua as $value )
+//判断是否是数组中存在的UA
+    if(eregi($value,$ua)) {
+        header("Content-type: text/html; charset=utf-8");
+        die('请勿采集本站！');
+    }
+}
+#echo 111;die;
+#echo "<meta http-equiv='Content-Type'' content='text/html; charset=utf-8'>";
+#exit("网站升级维护中，给您带来不便敬请谅解");die;
+
+$html_switch=0;// html switch
+$create_html=$_GET['make_html']=="shengchenghtmlwenjian"?1:0;//make index.html
+$debug=0;//test mode(echo source content,and write cache file)
+$domainSwitch=0;//for www,shop other case exp:state.wowsai.com
+unset($_GET['make_html']);
+//repair host attack
+$_SERVER['HTTP_HOST']=$_SERVER['HTTP_X_FORWARDED_HOST']=$_SERVER['SERVER_NAME']=preg_match("/^shop([0-9]*)\.wowsai\.com$/",$_SERVER['HTTP_HOST'])>0?$_SERVER['HTTP_HOST']:"www.wowsai.com";
+if(strlen($_POST['user_id'])>0){
+	if(strpos($_POST['user_id'],',')===false){
+		$_POST['user_id']=intval($_POST['user_id']);
+	}elseif(strpos($_POST['user_id'],'select')===false){
+		//safe
+	}else{
+		header("location:/index.php");
+	}
+}
+$cacheKeyArray=array(
+	array("app"=>"goods",	"act"=>"",				"spk"=>"id","id"=>"<number>"),		//shangpin xiangqing
+	array("app"=>"search",	"act"=>"index",				"spk"=>"cate_id","cate_id"=>"<number>"),	//erjifenlei
+	array("app"=>"store",	"act"=>"",				"spk"=>"id","id"=>"<number>"),//dianpu shouye/
+	array("app"=>"",		"act"=>""),										//shouye
+//	array("app"=>"copyright","act"=>"")												//guanyu xilie yemian
+//	array("app"=>"","act"=>""),
+);
+
+function Cache_Check($getarray,$cacheKA){
+	if(!empty($_POST))return 0;
+	foreach($cacheKA as $cv){
+		if($cv["app"]==$getarray["app"] and ($cv["act"]==$getarray["act"] or empty($getarray["act"]))){
+			return 1;
+		}
+	}
+	return 0;
+}
+
+
+function Cache_Filename($getarray,$document_root){// cache file name
+	$path=$document_root."/html/".$getarray["app"]."/";
+	if($getarray["app"]=="goods")$path.=floor($getarray["id"]/1000)."/";
+	$fn="htm";
+	foreach($getarray as $getkey => $getv){
+		//$fn.="_".$getkey;
+		if($getkey=="page" or $getkey=="id" or $getkey=="cate_id" or $getkey=="price_min" or $getkey=="price_max" or $getkey=="order" or $getkey=="tag" or $getkey=="materials")$fn.="_".$getkey."_".$getv;
+	}
+	$fn.=".html";
+	$cfn=$path.$fn;
+	return $cfn;
+}
+
+function Html_Filename($getarray,$document_root){// cache file name
+	$path=$document_root."/";
+	return $path."index.html";
+}
+
+
+$HTTP_HOST=strtolower($_SERVER["HTTP_HOST"]);
+if($HTTP_HOST!='www.wowsai.com'){//for shop123.wowsai.com
+//			return 0;
+	preg_match("/^shop([0-9]*)\.wowsai\.com$/",$HTTP_HOST,$html_host_array);
+	if(is_numeric($html_host_array[1])){
+		$_GET["app"]="store";
+		$_GET["id"]=$html_host_array[1];
+		$_GET["act"]="";
+	}else
+		$domainSwitch=1;
+}
+
+$cc=$domainSwitch==0?Cache_Check($_GET,$cacheKeyArray):0;
+
+if($cc==1 and $html_switch==1 and $create_html==0){//读取缓存文件
+	$cfn=Cache_FileName($_GET,$_SERVER["DOCUMENT_ROOT"]);
+	if(file_exists($cfn)){// read cache file
+		$mt=time()-filemtime($cfn);
+		if($mt<300){//缓存文件时间
+			if($debug==0){
+				echo file_get_contents($cfn);
+				exit;
+			}
+			clearstatcache();
+
+		}else{//缓存文件超时
+			unlink($cfn);
+		}
+	}
+}
+
+if($html_switch==1 or $create_html==1)ob_start();
+
+date_default_timezone_set("Asia/Shanghai");
+define('ROOT_PATH', dirname(__FILE__));
+include(ROOT_PATH . '/eccore/ecmall.php');
+
+/* 定义配置信息 */
+ecm_define(ROOT_PATH . '/data/config.inc.php');
+
+/* 启动ECMall */
+ECMall::startup(array(
+    'default_app'   =>  'default',
+    'default_act'   =>  'index',
+    'app_root'      =>  ROOT_PATH . '/app',
+    'external_libs' =>  array(
+        ROOT_PATH . '/includes/global.lib.php',
+        ROOT_PATH . '/includes/libraries/time.lib.php',
+        ROOT_PATH . '/includes/ecapp.base.php',
+        ROOT_PATH . '/includes/plugin.base.php',
+        ROOT_PATH . '/app/frontend.base.php',
+        ROOT_PATH . '/includes/subdomain.inc.php',
+    ),
+));
+mysql_close();//关闭数据库
+if($html_switch==1 or $create_html==1){
+	$c=ob_get_clean();
+	if($cc==1 and $html_switch==1 and $create_html==0){//生成缓存文件
+		file_put_contents($cfn,$c);
+	}else if($create_html==1){//生成静态文件
+		if(Cache_Check($_GET,$cacheKeyArray)){//静态文件合法性检查
+			$cfn=Html_Filename($_GET,$_SERVER["DOCUMENT_ROOT"]);
+			file_put_contents($cfn,$c);
+		}
+	}
+	echo $c;
+}
+?>

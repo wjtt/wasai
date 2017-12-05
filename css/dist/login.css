@@ -68,7 +68,6 @@ dl {
     display: block;
     width: 102px;
     height: 35px;
-    cursor: pointer;
     background-color: #25c2c7;
     float: left;
     color: white;
@@ -119,5 +118,3 @@ dd a:hover {
     height: 35px;
     float: left;
     margin: 0 0 10px 18px; }
-
-/*# sourceMappingURL=login.css.map */
