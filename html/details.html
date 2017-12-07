@@ -89,6 +89,7 @@
 							</ul>
 						</div>
 						<input type="hidden" id="gcate_url">
+						<!--tab切换-->
 						<div class="goodsHotLove">
 							<ul class="title">
 								<li class="tab"><a>最爱排行</a></li>
@@ -174,7 +175,7 @@
 										</dd>
 									</dl>
 								</div>
-								<div class=" part part2">
+								<div class="part part2">
 									<dl class="ed_clear">
 										<dt><a href="#"><img src="../images/details/small_201708242331358789.jpeg"></a></dt>
 										<dd><a href="#">步奏棉麻简约复古文艺双肩。。。</a><br>
@@ -265,9 +266,10 @@
 		                    <span class="ms_yahei"><em id="mesem">0</em>/300</span>
 		                </div>
 		            </div>
-		            <!--中间部分放大镜-->
+		            <!--中间部分-------------放大镜-->
 		            <div class="goodsInfoR">
 		            	<div class="right_top">
+		            		<!--放大镜-->
 		            		<div class="right_top_left">
 		            			<img id="img_0" src="../images/details/3.jpeg" data-zoom-image="../images/details/3.jpeg"/>
 								<div id="gal1">
@@ -308,46 +310,51 @@
 								</div>
 		            		</div>
 		            		
-		            		<div class="goodsInfoRight fr">
+		            		<div class="right_top_right">
 					        	<h2>2017新款包包夏季简约百搭小布包斜挎女包文艺小清新帆布女单肩包</h2>
 					        	<p class="goods_info_right_price">
-					            	<span class="goods_info_right_text">价&nbsp;&nbsp;&nbsp;&nbsp;格：</span>
+					            	<span class="goods_info_right_text">价&nbsp;&nbsp;格：</span>
 					                <span class="goods_info_right_price_yes ju" style="font-size:22px;" id="general_money">￥89.00</span>
 					            </p>
-								<input type="hidden" id="zhekou" value="">
-								<input type="hidden" id="jianmoney" value="">
+								
 					            <p class="goods_info_right_address_info">
-					            	<span class="goods_info_right_text" style="height:20px;">运&nbsp;&nbsp;&nbsp;&nbsp;费：</span>
-					                </p><ul class="goods_info_right_address">
-					                	<li class="store_add">中国	福建省	厦门市</li>
-					                    <li class="add_text">至</li>
-					                    <li class="buyer_add"><span id="now_region">四川省</span><img src="http://img3.wowsai.com/themes/store/newwowsai/styles/default/good_new/down_add.gif"></li>
-					                </ul>
-					            <p></p>
+					            	<span class="goods_info_right_text" style="height:20px;">运&nbsp;&nbsp;费：</span>
+					            </p>
+				                <ul class="goods_info_right_address">
+				                	<li class="store_add">中国	福建省	厦门市</li>
+				                    <li class="add_text">至</li>
+				                    <li class="buyer_add">
+				                    	<span id="now_region">四川省</span>
+				                    	<img src="http://img3.wowsai.com/themes/store/newwowsai/styles/default/good_new/down_add.gif">
+				                    </li>
+				                </ul>
 					            <ul class="goods_info_kuaidi" id="shipping_mode"><a><span>卖家承担运费</span></a></ul>
-								<div class="clear"></div>
-								<div class="address_area_over" style="display:none;" id="shippings">
-									<dl><dt>请选择你的收货城市</dt><dd><img src="http://img3.wowsai.com/themes/store/newwowsai/styles/default/good_new/chazi.gif" onclick="closeShippings()"></dd></dl>
+					            <!--隐藏收获地址-->
+								<div class="address_area_over" id="shippings">
+									<dl>
+										<dt>请选择你的收货城市</dt>
+										<dd><img src="http://img3.wowsai.com/themes/store/newwowsai/styles/default/good_new/chazi.gif"></dd></dl>
 									<p class="dangqian_city">你当前的所在地：<a href="javascript:selectShippings('835','四川省');">四川省</a></p>
 									<ul class="tb-clearfix"><li><a href="javascript:selectShippings(519,'上海市');">上海市</a></li><li><a href="javascript:selectShippings(658,'江苏省');">江苏省</a></li><li><a href="javascript:selectShippings(672,'浙江省');">浙江省</a></li><li><a href="javascript:selectShippings(684,'安徽省');">安徽省</a></li><li><a href="javascript:selectShippings(712,'江西省');">江西省</a></li><li><a href="javascript:selectShippings(481,'北京市');">北京市</a></li><li><a href="javascript:selectShippings(500,'天津市');">天津市</a></li><li><a href="javascript:selectShippings(582,'河北省');">河北省</a></li><li><a href="javascript:selectShippings(594,'山西省');">山西省</a></li><li><a href="javascript:selectShippings(645,'内蒙古');">内蒙古</a></li><li><a href="javascript:selectShippings(724,'山东省');">山东省</a></li><li><a href="javascript:selectShippings(742,'河南省');">河南省</a></li><li><a href="javascript:selectShippings(761,'湖北省');">湖北省</a></li><li><a href="javascript:selectShippings(779,'湖南省');">湖南省</a></li><li><a href="javascript:selectShippings(702,'福建省');">福建省</a></li><li><a href="javascript:selectShippings(795,'广东省');">广东省</a></li><li><a href="javascript:selectShippings(817,'海南省');">海南省</a></li><li><a href="javascript:selectShippings(820,'广西');">广西</a></li><li><a href="javascript:selectShippings(606,'辽宁省');">辽宁省</a></li><li><a href="javascript:selectShippings(621,'吉林省');">吉林省</a></li><li><a href="javascript:selectShippings(631,'黑龙江');">黑龙江</a></li><li><a href="javascript:selectShippings(892,'陕西省');">陕西省</a></li><li><a href="javascript:selectShippings(903,'甘肃省');">甘肃省</a></li><li><a href="javascript:selectShippings(918,'青海省');">青海省</a></li><li><a href="javascript:selectShippings(927,'宁夏');">宁夏</a></li><li><a href="javascript:selectShippings(933,'新疆');">新疆</a></li><li><a href="javascript:selectShippings(539,'重庆市');">重庆市</a></li><li><a href="javascript:selectShippings(835,'四川省');">四川省</a></li><li><a href="javascript:selectShippings(857,'贵州省');">贵州省</a></li><li><a href="javascript:selectShippings(867,'云南省');">云南省</a></li><li><a href="javascript:selectShippings(884,'西藏');">西藏</a></li><li><a href="javascript:selectShippings(952,'香港');">香港</a></li><li><a href="javascript:selectShippings(953,'澳门');">澳门</a></li><li><a href="javascript:selectShippings(954,'台湾省');">台湾省</a></li></ul>
 								</div>
-								<p class="goods_info_right_price" style="margin:12px 0 0 0;">
-					            	<span class="goods_info_right_text">评&nbsp;&nbsp;&nbsp;&nbsp;价：</span>
-					                <span class="godds_info_right_pinjia">好评率100.00%  | <a href="index.php?app=store&amp;act=credit&amp;id=965049" target="_blank">已有3条评价</a></span>
+								<p class="goods_info_right_price">
+					            	<span class="goods_info_right_text">评&nbsp;&nbsp;价：</span>
+					                <span class="godds_info_right_pinjia">好评率100.00%  | <a class="pingjia" target="_blank">已有3条评价</a></span>
 					            </p>
+					            <!--购买数量-->
 					            <div class="goodsInfoRgui">
-									<dl class="goods_info_right_guige_one" style="margin-top:3px; ">
+									<dl class="goods_info_right_guige_one">
 										<dt>购买数量：</dt>
-										<dd style="margin-top:13px;">
+										<dd>
 											<span class="gmsl_jian_but"><a href="javascript:quantity_onclick(0)">-</a></span>
 											<input type="text" class="num_input" id="quantity" value="1">
 											<span class="gmsl_jia_but"><a href="javascript:quantity_onclick(1)">+</a></span>
-											<span style="margin-left:9px; color:#8b8a8a;">库存<span id="limit_num">511</span>件</span>
+											<span class="kucun">库存<span id="limit_num">511</span>件</span>
 											<input type="hidden" id="shopping_amount" value="">
 										</dd>
 									</dl>
                	            	</div>
-					            <div class="clear"></div>
+					            <!--加入购物车按钮-->
         						<div class="goodsRightBtn">
             						<a href="javascript:buy();" class="BuyBtn radius center size18">加入购物车</a>
                 				</div>
@@ -356,7 +363,107 @@
 		            		
 		            		
 		            	</div>
+		            	<!---->
 		            	<div class="right_bottom">
+		            		<ul class="tabTip">
+		            			<li><a class="chan1">产品详情</a></li>
+		            			<li><a class="chan1">买家评价</a></li>
+		            			<li><a class="chan1">购买咨询</a></li>
+		            			<li><a class="chan1">产品咨询</a></li>
+		            		</ul>
+		            		
+		            		
+		            		<div class="pppp">
+		            			<div class="p p1">
+			            			<div class="pictures">
+			            				<img src="../images/details/big18.jpg" />
+			            				<img src="../images/details/big13.jpg" />
+			            				<img src="../images/details/big1.jpg" />
+			            				<img src="../images/details/big10.jpg" />
+			            				<img src="../images/details/big11.jpg" />
+			            				<img src="../images/details/big12.jpg" />
+			            				<img src="../images/details/big13.jpg" />
+			            				<img src="../images/details/big14.jpg" />
+			            				<img src="../images/details/big15.jpg" />
+			            				<img src="../images/details/big20.jpg" />
+			            				<img src="../images/details/big21.jpg" />
+			            				<img src="../images/details/big22.jpg" />
+			            				<img src="../images/details/big23.jpg" />
+			            				<img src="../images/details/big24.jpg" />
+			            				<img src="../images/details/big25.jpg" />
+			            			</div>
+			            			<div class="biaoqian">
+			            				<div class="lll">标签</div>
+			            				<div class="rrr">材质</div>
+			            			</div>
+			            			<div class="dztj">
+			            				<div class="titl1">店主推荐</div>
+			            				<ul class="tj">
+			            					<li class="tj2">
+			            						<a href="#"><img src="../images/details/small_201708242331358789.jpeg"/></a>
+			            						<h6>布奏帆布包女包日韩竖款单肩包纯色休闲布袋文艺小清新简约大包包</h6>
+			            						<p><strong>[步奏手工原创...]</strong>￥99.00</p>
+			            					</li>
+			            					<li class="tj2">
+			            						<a href="#"><img src="../images/details/small_201708242329231862.jpeg"/></a>
+			            						<h6>布奏帆布包女包日韩竖款单肩包纯色休闲布袋文艺小清新简约大包包</h6>
+			            						<p><strong>[步奏手工原创...]</strong>￥99.00</p>
+			            					</li>
+			            					<li class="tj2">
+			            						<a href="#"><img src="../images/details/small_201708242330535037.jpeg"/></a>
+			            						<h6>布奏帆布包女包日韩竖款单肩包纯色休闲布袋文艺小清新简约大包包</h6>
+			            						<p><strong>[步奏手工原创...]</strong>￥99.00</p>
+			            					</li>
+			            					<li class="tj2">
+			            						<a href="#"><img src="../images/details/small_201708242332581755.jpeg"/></a>
+			            						<h6>布奏帆布包女包日韩竖款单肩包纯色休闲布袋文艺小清新简约大包包</h6>
+			            						<p><strong>[步奏手工原创...]</strong>￥99.00</p>
+			            					</li>
+			            				</ul>
+			            				<div class="titl1">买过此商品的用户还买过</div>
+			            				<ul class="tj">
+			            					<li class="tj2">
+			            						<a href="#"><img src="../images/details/cj1.jpg"/></a>
+			            						<h6>布奏帆布包女包日韩竖款单肩包纯色休闲布袋文艺小清新简约大包包</h6>
+			            						<p><strong>[步奏手工原创...]</strong>￥99.00</p>
+			            					</li>
+			            					<li class="tj2">
+			            						<a href="#"><img src="/wawsai/images/details/cj2.jpeg"/></a>
+			            						<h6>布奏帆布包女包日韩竖款单肩包纯色休闲布袋文艺小清新简约大包包</h6>
+			            						<p><strong>[步奏手工原创...]</strong>￥99.00</p>
+			            					</li>
+			            					<li class="tj2">
+			            						<a href="#"><img src="../images/details/cj3.jpg"/></a>
+			            						<h6>布奏帆布包女包日韩竖款单肩包纯色休闲布袋文艺小清新简约大包包</h6>
+			            						<p><strong>[步奏手工原创...]</strong>￥99.00</p>
+			            					</li>
+			            					<li class="tj2">
+			            						<a href="#"><img src="../images/details/cj4.jpg"/></a>
+			            						<h6>布奏帆布包女包日韩竖款单肩包纯色休闲布袋文艺小清新简约大包包</h6>
+			            						<p><strong>[步奏手工原创...]</strong>￥99.00</p>
+			            					</li>
+			            				</ul>
+			            			</div>
+			            		</div>
+			            		<div class="p p2">
+			            			<div class="boxxxx">
+			            				<p>好好好好</p>
+			            				<textarea></textarea>
+			            			</div>
+			            		</div>
+			            		<div class="p p3">
+			            			<div class="boxxxx">
+			            				<p>购买咨询</p>
+			            				<textarea></textarea>
+			            			</div>
+			            		</div>
+			            		<div class="p p4">
+			            			<div class="boxxxx">
+			            				<p>产品咨询</p>
+			            				<textarea></textarea>
+			            			</div>
+			            		</div>
+		            		</div>
 		            		
 		            	</div>
 		            </div>

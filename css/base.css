@@ -260,16 +260,18 @@ a:hover{color: #26c4c9;}
 	background-color: aquamarine;
 }
 .erweima:hover{ background-position:0 0;}
-.erweima:hover .ewm_pic img{opacity: 1;}
 .ewm_pic{ 
 	position: fixed;
 	width:157px; 
 	height:189px; 
 	right:300px; 
 	bottom:132px; 
-	opacity: 0;
+	
+	/*display: none;*/
 }
+/*.erweima:hover .guding>.ewm_pic{display: block;}*/
 .toTop {
+	display: block;
 	position:fixed;
 	bottom:50px;
 	right:100px;

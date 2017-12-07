@@ -89,7 +89,6 @@
             text-align: center;
             line-height: 50px;
             font-size: 14px;
-//          transition: all 2s;
             .ccar{
                 color:white;
                 width: 120px;
@@ -98,7 +97,7 @@
         }
     }
 }
-.list_item:hover .shoucang{display: block;}
+.list_item:hover .addTocar{display: block;}
 .list_item:nth-child(4){margin-right: 0px;}
 .list_item:nth-child(8){margin-right: 0px;}
 .list_item:nth-child(12){margin-right: 0px;}

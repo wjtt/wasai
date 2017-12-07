@@ -1,0 +1,155 @@
+//cai ni xihuan       
+.list{
+//  height: 2330px;
+    margin-top: 32px;
+    padding-bottom: 70px;
+    .list_item{
+        width: 242px;
+        height: 380px;
+        margin: 0 44px 0 0;
+        position: relative;
+        float: left;
+        .img{
+            display: block;
+            width: 242px;
+        }
+        h3{
+            padding-top: 10px;
+            width: 242px;
+            height: 50px;
+            font-size: 13px;
+            line-height: 20px;
+        }
+        .price{
+            margin: 0 auto;
+            width: 144px;
+            height: 20px;
+            line-height: 20px;
+            text-align: center;
+            color: #ff781f;
+            font-weight: 600;
+        }
+        //收藏到购物车
+        .addTocar{
+            width: 120px;
+            height: 50px;
+            margin: 0 auto;
+            border-radius: 5px;
+            background-color: #ff781f;
+            text-align: center;
+            line-height: 50px;
+            font-size: 14px;
+            .ccar{
+                color:white;
+                width: 120px;
+                height: 50px;
+            }
+        }
+    }
+}
+.list_item:nth-child(4){margin-right: 0px;}
+.list_item:nth-child(8){margin-right: 0px;}
+.list_item:nth-child(12){margin-right: 0px;}
+.list_item:nth-child(16){margin-right: 0px;}
+.list_item:nth-child(20){margin-right: 0px;}
+.list_item:nth-child(24){margin-right: 0px;}
+
+//cart_body
+.main{
+    height: 3000px;
+    background-color: #CFCFCF;
+    .main_box{
+        width: 1100px;
+        height: 854px;
+        margin: 0 auto;
+//      background-color: #66AFE9;
+        
+    }
+    .cart111{
+        width: 1100px;
+        margin: 0 auto;
+    }
+}
+h1{
+    height: 50px;
+    line-height: 50px;
+    font-weight: 600;
+    font-size: 20px;
+    background-color: #1DB9BE;
+    border-radius: 5px;
+    margin: 0 auto;
+}  
+//title
+.cart .header_title div, .cart .row div {
+    width:122px;
+    height:30px;
+    line-height: 30px;
+    float: left;
+    border: 1px solid;
+    overflow: hidden;
+    text-align: center;
+}
+
+.cart, .cart .header_title, .cart .row, .cart .cart_body {
+    clear:both;
+}
+.cart_body .row .minus,.cart_body .row .add {
+    width:20px;
+    height: 25px;
+    border: 1px solid;
+    display:inline-block;
+    text-align: center;
+    cursor: pointer;
+}
+
+//cart_body
+.cart{
+    .cart_body{
+        width: 1100px;
+        margin: 0 auto;
+        clear: both;
+        .row{
+            clear: both;
+            div{
+                text-align: center;
+                width: 122px;
+                height: 70px;
+                line-height: 70px;
+                float: left;
+                border: 1px solid;
+                overflow: hidden;
+            }
+        }
+    }
+    .foot{
+        width: 1100px;
+        margin:  15px auto;
+        background-color: #1DB9BE;
+        border-radius: 5px;
+    }
+}
+.cart_body{
+    .row{
+        .minus,.add{
+            margin-top: 5px;
+            width:20px;
+            height: 23px;
+            border: 1px solid;
+            display:inline-block;
+            text-align: center;
+            line-height: 20px;
+            cursor: pointer;
+        }
+        .img{
+            img{
+                width: 120px;
+                height: 70px;
+            }
+        }
+        .title{
+            font-size: 14px;
+            padding: 10px 0px;
+            line-height: 27px !important;
+        }
+    }
+}

@@ -1,18 +1,20 @@
 .main{
     font-size: 12px;
-    height: 22353px;
+    height: 8177px;
+//  height: auto;
     width: 100%;
     .main_box{
         position: relative;
         width: 1100px;
-        height: 22353px;
+        height: 8177px;
+//      height: auto;
         margin: 0 auto;
         .goodsWarp{
             position: absolute;
             width: 1100px;
-            height: 22283px;
+            height: 8100px;
             margin: 70px auto 0;
-            border: 1px solid red;
+//          border: 1px solid red;
             padding-bottom: 200px;
             .pp{
                display: none; 
@@ -320,14 +322,11 @@
 //goods infor
 .goodsInfoR{
     width: 828px;
-    height: 22330px;
+    height: 8100px;
     float: right;
     .right_top{
         width: 828px;
-        height: 463px;
-    }
-    .right_bottom{
-        
+        height: 490px; 
     }
 }
 .right_top_left{
@@ -392,5 +391,352 @@
         }
     }
 }
-.more:nth-child(1) .xi{background-position: 2px -560px;}
-.more:nth-child(2) .xi{background-position: 2px -560px !important;}
+.right_top_left .fenxiang .more:nth-child(1) .xi{background-position: 2px -560px;}
+.right_top_left .fenxiang .more:nth-child(2) .xi{background-position: 2px -560px;}
+
+
+.goodsInfoR{
+    .right_top{
+       .right_top_right{
+            width: 385px;
+            height: 463px;
+            float: right;
+            margin-left: 10px;
+        } 
+    }
+}
+.right_top_right{
+    h2{
+        height: 76px;
+        font-size: 18px;
+        color: #222;
+        line-height: 30px;
+        border-bottom: 1px solid #f3f3f3;
+        padding: 0 0 15px 0;
+        margin: 0 0 25px 0;
+    }
+    p{
+        height: 32px;
+        font-size: 12px;
+        .goods_info_right_text{
+            width: 58px;
+            height: 32px;
+            float: left;
+        }
+        .ju{
+            width: 295px;
+            height: 32px;
+            float: left;
+            font-weight: 700;
+            margin: 0 0 0 5px;
+            color: #FF0000;
+        }
+    }
+}
+.goods_info_right_address_info{
+    width: 58px;
+    height: 20px;
+    float: left;
+}
+.goods_info_right_address{
+    width: 300px;
+    height: 20px;
+    .store_add{
+        width: 125px;
+        height: 20px;
+        float: left;
+    }
+    .add_text{
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        float: left;
+    }
+    .buyer_add{
+        width: 90px;
+        height: 20px;
+        float: left;
+        margin: 0 0 0 7px;
+        padding: 0 7px 0 3px;
+        border: 1px solid #F1F1F1;
+        span{
+            width: 60px;
+            height: 20px;
+            line-height: 20px;
+            padding-left: 2px;
+            float: left;
+            cursor: pointer;
+            padding-right: 4px;
+            
+        }
+    }
+}
+
+.goods_info_kuaidi{
+    color: gainsboro;
+    height: 20px;
+    margin: 5px 0 0 64px;
+}
+.goods_info_right_price{
+    height: 32px;
+    color: #222;
+    .godds_info_right_pinjia{
+        color: #8b8b8b;
+        .pingjia{
+            color: #8b8b8b;
+        }
+    }
+}
+
+//shu liang
+.goodsInfoRgui{
+    height: 53px;
+    padding: 0 0 15px 0;
+    dl{
+        dt{
+            width: 60px;
+            line-height: 20px;
+            height: 20px;
+            float: left;
+        }
+        dd{
+            width: 287px;
+            height: 20px;
+            //jian
+            .gmsl_jian_but{
+                width: 20px;
+                height: 20px;
+                line-height: 20px;
+                text-align: center;
+                float: left;
+            
+            }
+            .num_input{
+                float: left;
+                width: 42px;
+                height: 20px;
+                text-align: center;
+                line-height: 20px;
+            }
+            //jian
+            .gmsl_jia_but{
+                width: 20px;
+                height: 20px;
+                line-height: 20px;
+                text-align: center;
+                float: left;
+            }
+            //ku cun
+            .kucun{
+                width: 60px;
+                height: 20px;
+                color: #8b8b8b;
+                margin-left: 10px;
+                line-height: 20px;
+            }
+        }
+    }
+}
+
+
+//add to car
+.goodsRightBtn{
+    position: relative;
+    height: 86px;
+    color: #8d8d8d;
+    background: url(/wawsai/images/details/diagonalMaskWhiteBg.gif) repeat center center #e5e5e5;
+    a{
+        position: absolute;
+        width: 261px;
+        height: 50px;
+        display: block;
+        margin: 18px 65px 0;
+        line-height: 50px;
+        border-radius: 5px;
+        text-align: center;
+        font-weight: 600;
+        font-size: 18px;
+//      padding-left: 50px;
+        color: white;
+//      background-color: #464c600;
+        background: url(/wawsai/images/details/buycar2.png) no-repeat 50px center #1DB9BE;
+//      background-color: #464c600;
+    }
+}
+//address
+.address_area_over{
+    display: none;
+    width: 414px;
+    height: 293px;
+    border: 1px solid #48aac7;
+    background-color: #fafafa;
+    position: absolute;
+    z-index: 1000;
+    dl{
+        width: 396px;
+        height: 36px;
+        line-height: 35px;
+        border-bottom: 1px solid #c8c9ce;
+        dt{
+            margin: 0 0 0 8px;
+            width: 372px;
+            height: 35px;
+            float: left;
+            font-size: 14px;
+        }
+        dd{
+            cursor: pointer;
+            width: 14px;
+            height: 15px;
+            float: left;
+        }
+    }
+    .dangqian_city{
+        height: 35px;
+        line-height: 35px;
+        margin: 0 0 0 8px;
+        font-size: 12px;
+    }
+}
+.tb-clearfix{
+    margin: 5px 0 0 8px;
+    li{
+        float: left;
+        height: 22px;
+        line-height: 22px;
+        margin: 0 0px 8px 0;
+        padding:0px 22px;
+    }
+}
+
+
+
+/////////////////////////////////
+.right_bottom{
+    width: 828px;
+    height: 1000px;
+    ul{
+       height: 37px;
+        border-bottom: 1px solid #cfcfcf;
+        .chan1{
+            background-color: #f6f6f1;
+            border: 1px solid #cfcfcf;
+            width: 110px;
+            height: 35px;
+            text-align: center;
+            line-height: 37px;
+            margin-left: 5px;
+            float: left;
+        }
+    }
+}
+.right_bottom ul li:nth-child(1){
+    margin-left: 40px;
+}
+.p{
+    display: none;
+    width: 828px;
+    .pictures{
+        padding: 20px;
+        width: 828px;
+        img{
+            width: 500px;
+            height: 450px;
+        }
+    }
+    .biaoqian{
+        width: 750px;
+        height: 117px;
+        border: 1px solid #E5E5E5;
+        div{
+            height: 115px;
+            width: 374px;
+            float: left;
+            padding: 6px 0 0 18px;
+            border-right: 1px solid #e5e5e5;
+        }
+    }
+}
+
+.p1{display: block}
+
+.dztj{
+    .titl1{
+        margin-top: 30px;
+        width: 300px;
+        height: 20px;
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 600;
+    }
+    .tj{
+        width: 828px;
+        height: 242px;
+        border-bottom: none;
+        
+        .tj2{
+            width: 166px;
+            height: 240px;
+            float: left;
+            margin-left: 0px;
+            margin-right: 20px;
+            padding: 9px;
+            border: 1px solid #E5E5E5;
+            a{
+                img{
+                    width: 142px;
+                    height: 142px;
+                }
+            }
+            h6{
+                overflow: hidden;
+                word-break: break-all;
+                height: 40px;
+                font-size: 12px;
+                font-weight: 400;
+                padding: 2px 0 0 3px;
+                line-height: 18px;
+            }
+            p{
+                height: 40px;
+                color: #ed834c;
+                text-align: right;
+                strong{
+                    width: 104px;
+                    float: left;
+                    color: #8b8a8a;text-align: left;
+                }
+            }
+            
+        }
+    }
+}
+.boxxxx{
+    margin-top: 50px;
+    width: 725px;
+    height: 400px;
+    border: 1px solid #F1F1F1;
+    p{
+        margin-left: 50px;
+        border-bottom: 1px solid #F1F1F1;
+        height: 30px;
+        width: 600px;
+        line-height: 30px;
+        font-size: 15px;
+    }
+    textarea{
+        width: 600px;
+        height: 300px;
+        border: 1px solid #F1F1F1;
+        margin-top: 10px;
+        margin-left: 50px;
+    }
+}
+
+
+//toTop
+.erweima{
+    background:url(/wawsai/images/details/chat_with_me.gif) no-repeat;
+}
+ 
+

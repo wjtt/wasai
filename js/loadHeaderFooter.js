@@ -24,5 +24,9 @@ define(["jquery", "cookie"], function($) {
 	});
 
 	$(".footer").load("/wawsai/html/include/footer.html");
+//	$(".erweima").on("click",function(){
+//		$(".ewm_pic").show();
+//	});
+	
 
 });

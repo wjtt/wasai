@@ -1,9 +1,29 @@
 require(["config"],function(){
 	require(["jquery","load"],function(){
 		console.log("加载注册页面的头尾");
+	
+		
 		$(".tab").on("click",function(){
-			$(".part").eq($(this).index()).addClass("part1").siblings(".part").removeClass("part1")
+			$(".part").eq($(this).index()).addClass("part1").siblings(".part").removeClass("part1");
+			console.log($(this).index());
 		});
+		//产品详情展示的tab切换
+		$(".tabTip .chan1").on("click",function(){
+//			console.log($(this).parent().index());
+			$(this).css({"border-bottom":"none","background-color":"white"});
+			$(".p").eq($(this).parent().index()).addClass("p1").siblings(".p").removeClass("p1");
+			
+		});
+		
+		//点击时将隐藏的元素显示出来
+		$(".buyer_add").on("click",function(){
+			$(".address_area_over").show();
+		});
+		$(".address_area_over dl dd").on("click",function(){
+			$(".address_area_over").hide();
+		});
+		
+		
 		
 		//放大镜
 		require(["zoom"],function(){

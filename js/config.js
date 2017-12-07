@@ -6,6 +6,7 @@ require.config({
 		"load":"/wawsai/js/loadHeaderFooter",
 		"carcousl":"/wawsai/lib/carousel",
 		"template":"/wawsai/lib/template",
-		"zoom":"/wawsai/lib/jquery.elevateZoom-2.2.3.min"
+		"zoom":"/wawsai/lib/jquery.elevateZoom-2.2.3.min",
+		"fly":"lib/jquery.fly.min"
 	}
 });

@@ -89,7 +89,7 @@
         width: 120px;
         height: 50px; }
 
-.list_item:hover .shoucang {
+.list_item:hover .addTocar {
   display: block; }
 
 .list_item:nth-child(4) {
