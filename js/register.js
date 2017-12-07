@@ -26,7 +26,7 @@ require(["config"],function(){
 //
 		$("#submit").on("click",function(){
 			//console.log("das");
-			//if (!isUsernameExist) {
+			if (!isUsernameExist) {
 				/* 通过ajax向服务器发送注册用户信息，保存注册用户 */
 				$.ajax({
 					type : "post",
@@ -47,7 +47,7 @@ require(["config"],function(){
 						}
 					}
 				});
-			//}
+			}
 		});
 		
 		
@@ -75,6 +75,8 @@ require(["config"],function(){
 
 		generateCode();
 		$("#gen_code").on("click",function(){generateCode();});
+		
+		
 		//失去焦点时自动检测验证码的正确性
 		$("#input_code").blur(function(){
 			$.ajax({
@@ -127,6 +129,16 @@ require(["config"],function(){
 //			});
 //		});
 //		loadCode(); // 调用加载验证码方法
+		
+		$("#password_confirm").blur(function(){
+			var _password_confirm=$(this).val();
+			var _password=$("#password").val();
+			console.log(_password);
+			console.log(_password_confirm);
+			if(_password!=_password_confirm){
+				$(".field_notice111").show();
+			}
+		});
 //		
 	});
 });

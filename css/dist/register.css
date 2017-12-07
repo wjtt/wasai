@@ -81,6 +81,10 @@
     color: #9C9C9C;
     display: none; }
 
+.field_notice111 {
+  color: red;
+  display: none; }
+
 .sex {
   width: 226px;
   height: 45px; }

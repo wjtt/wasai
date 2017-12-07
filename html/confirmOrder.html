@@ -1,17 +1,191 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="UTF-8">
 		<title>确认订单页面</title>
 		<link rel="stylesheet" type="text/css" href="../css/base.css" />
 		<link rel="stylesheet" type="text/css" href="../css/dist/confirmOrder.css" />
 	</head>
+
 	<body>
 		<div class="header"></div>
 		<div class="main">
+			<div class="newaddress_box" id="use_newaddress">
+				<div class="newaddress_box_tit">使用新收货地址
+					<img class="close" src="../images/newaddress_tit_close.jpg">
+				</div>
+				<form id="new_address_form" name="new_address_form">
+					<!--收货人-->
+					<p class="newaddress_box_name">
+						<span class="shouhuoren">收货人：</span>
+						<input name="consignee" id="consignee" class="text1" type="text"/>
+						<span class="maijia">买家姓名：</span>
+						<input name="bconsignee" id="bconsignee" class="text1" type="text"/>
+					</p>
+					<p class="field_notice">请填写真实姓名
+						<span>如果收货人不是买家本人请填写</span>
+					</p>
+					<!--所在地区-->
+					<p class="area" id="region">
+						<span class="area_text">所在地区：</span>
+						<select id="province" class="area_input s0" name="region"></select>
+						<select id="city" class="area_input s1" name="region"></select>
+						<select id="district" class="area_input s2" name="region"></select>
+						<span class="field_notice">请选择地区</span>
+					</p>
+					<!--详细地址-->
+					<p class="detailinfo">
+						<span class="detailinfo_text">详细地址：</span>
+						<span class="detail_input">
+			            	<input name="address" id="address" class="text1" type="text"/>
+						</span>
+					</p>
+					<p class="field_message">
+						<span class="field_notice">请填写真实地址，不需要重复填写所在地区</span>
+					</p>
+					<!--邮政编码-->
+					<p class="post_number">
+						<span class="post_number_text">邮政编码：</span>
+						<span class="post_number_input">
+	            			<input name="zipcode" id="zipcode" class="text1" type="text">
+	            			<span class="field_message"><span class="field_notice">邮政编码</span>
+						</span>
+						</span>
+					</p>
+					<!--收货人手机-->
+					<p class="phonenumber">
+						<span class="shr_phonenumber">收货人手机号码：</span>
+						<span class="shr_phonenumber_box"><input name="phone_mob" id="phone_mob" class="text1" type="text"></span>
+						<span class="shr_tel">固定电话：</span>
+						<span class="shr_tel_box"><input id="phone_tel" name="phone_tel" class="text1" type="text"></span>
+					</p>
+					<p id="field_message" class="field_message" style="padding-top:-5px;padding-left:20px;width:500px"><span class="field_notice"></span></p>
+					<!--买家手机-->
+					<p class="phonenumber">
+						<span class="shr_phonenumber">买家手机号码：&nbsp;</span>
+						<span class="shr_phonenumber_box"><input name="bphone_mob" id="bphone_mob" class="text1" type="text"></span>
+						<span class="shr_tel">固定电话：</span>
+						<span class="shr_tel_box"><input id="bphone_tel" name="bphone_tel" class="text1" type="text"></span>
+					</p>
+					<!--配送时间-->
+					<div class="peisongtime">
+						<span class="peisongtime_text">配送时间：</span>
+						<dl>
+							<dt><input name="shipping_time" value="0" checked="checked" type="radio"></dt>
+							<dd>不限时间</dd>
+						</dl>
+						<dl>
+							<dt><input name="shipping_time" value="1" type="radio"></dt>
+							<dd>工作日配送</dd>
+						</dl>
+						<dl>
+							<dt><input name="shipping_time" value="2" type="radio"></dt>
+							<dd>周末节假日配送</dd>
+						</dl>
+					</div>
+					<!--自动保存地址-->
+					<p class="save_address">
+						<input checked="checked" value="1" id="save_address" name="save_address" type="checkbo"/>
+						<input name="if_default" id="if_default" value="1" readonly="readonly" type="hidden"/>
+						<span>自动保存收货地址（选择后该地址将会保存到您的收货地址列表）</span>
+					</p>
+					<!--确定取消按钮-->
+	        		 <div class="confirm">
+	        		 	<a href="#">确定</a>
+	        		 	<a href="#">取消</a>
+	        		 </div>
+				</form>
+			</div>
+			
+			
+			
+			<div class="querenxinxi">确认订单信息</div>
+			<div class="querenshouhuo">确认收货地址<a href="#">管理收货地址</a></div>
+			<div class="xin"><div class="tianjiaAddress">添加新地址</div></div>
+			<div class="querendingdan">确认订单信息</div>
+			
+			
+			<div class="cart">
+				<div class="header_title ">
+					<div class="ck1"><label><input type="checkbox" id="ck_all">全选</label></div>
+					<div class="img">图片</div>
+					<div class="name">标题</div>
+					<div class="wasai1">哇塞币</div>
+					<div class="price">价格</div>
+					<div class="amount">数量</div>
+					<div class="youhui">优惠</div>
+					<div class="sub">小计</div>
+					<div class="oper">操作</div>
+				</div>
+				<div class="cart_body"></div>
+				<script type="text/html" id="goodList">
+					{{each shangping as shang}}
+						<div class="row">
+							<input type="hidden" class="id" value="{{shang.id}}"/>
+							<div class="ck"><input type="checkbox" class="ck_prod"></div>
+							<div class="img"><img src="{{shang.img}}"></div>
+							<div class="title">{{shang.des}}</div>
+							<div class="wasai">0</div>
+							<div class="price">{{shang.price}}</div>
+							<div class="amount">
+								<span class="minus">-</span>
+								<input type="text" class="amount_val" value="{{shang.amount}}" size="1">
+								<span class="add">+</span>
+							</div>
+							<div class="youhui">00.00</div>
+							<div class="sub">{{shang.price}}</div>
+							<div class="oper"><a class="del" href="javascript:void(0);">删除</a></div>
+						</div>
+					{{/each}}
+				</script>
+			</div>
+				
+				
+				<!--给卖家留言-->
+				<div class="write_order_info">
+					<div class="message_to_saller">
+						<p>给卖家留言：</p>
+						<textarea id="postscript" rows="1">选填，可以告诉店主卖家对商品的特殊要求，如颜色、尺寸等</textarea>
+					</div>
+					<div class="use_youhuijuan">
+						<input type="radio" checked="checked"/>
+						<p class="use_youhuijuan_text">优惠券编号：</p>
+						<input class="t" type="text" />
+						<span>使用</span><span>取消</span><span class="qian">-￥0.00</span>
+					</div>
+					<!--店铺优惠-->
+					<div class="youhuiiii">
+						<input type="radio"/>
+						<p class="use_youhuijuan_text">店铺优惠：</p>
+						<select>
+							<option>不使用优惠券</option>
+							<option>10元优惠券</option>
+							<option>20元优惠券</option>
+						</select>
+						<span>?</span><span class="qian ">-￥0.00</span>
+					</div>
+					<!--运送方式-->
+					<div class="yunsong">
+						<p class="use_youhuijuan_text">运送方式：</p>
+						<select></select>
+						<span>?</span><span class="qian">￥0.00</span>
+					</div>		
+				</div>
+				<div class="foot">
+					合计：<span id="total">0.00</span>
+					<div class="jiesuan">
+						<a href="confirmOrder.html">去结算</a>
+					</div>
+				</div>
+				<div class="tijiao">
+					<a class="ptj1" href="cart.html">返回购物车</a>
+					<a class="ptj2" href="fukuan.html">提交订单</a>
+				</div>
 			
 		</div>
-		<div class="footer"></div>
-		<script src="../lib/requirejs/require.js" data-main="../js/confirmOrder"></script>
+		<div class="footer "></div>
+		<script src="../lib/requirejs/require.js " data-main="../js/confirmOrder"></script>
 	</body>
+
 </html>

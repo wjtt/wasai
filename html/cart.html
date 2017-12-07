@@ -26,30 +26,34 @@
 						<div class="oper">操作</div>
 					</div>
 					<div class="cart_body"></div>
-						<script type="text/html" id="goodList">
-							{{each shangping as shang}}
-								<div class="row">
-									<input type="hidden" class="id" value="{{shang.id}}"/>
-									<div class="ck"><input type="checkbox" class="ck_prod"></div>
-									<div class="img"><img src="{{shang.img}}"></div>
-									<div class="title">{{shang.des}}</div>
-									<div class="wasai">0</div>
-									<div class="price">{{shang.price}}</div>
-									<div class="amount">
-										<span class="minus">-</span>
-										<input type="text" class="amount_val" value="{{shang.amount}}" size="1">
-										<span class="add">+</span>
-									</div>
-									<div class="youhui">00.00</div>
-									<div class="sub">{{(shang.price*shang.amount).toFixed(2)}}</div>
-									<div class="oper"><a class="del" href="javascript:void(0);">删除</a></div>
+					<script type="text/html" id="goodList">
+						{{each shangping as shang}}
+							<div class="row">
+								<input type="hidden" class="id" value="{{shang.id}}"/>
+								<div class="ck"><input type="checkbox" class="ck_prod"></div>
+								<div class="img"><img src="{{shang.img}}"></div>
+								<div class="title">{{shang.des}}</div>
+								<div class="wasai">0</div>
+								<div class="price">{{shang.price}}</div>
+								<div class="amount">
+									<span class="minus">-</span>
+									<input type="text" class="amount_val" value="{{shang.amount}}" size="1">
+									<span class="add">+</span>
 								</div>
-							{{/each}}
-						</script>
+								<div class="youhui">00.00</div>
+								<div class="sub">{{(shang.price*shang.amount).toFixed(2)}}</div>
+								<div class="oper"><a class="del" href="javascript:void(0);">删除</a></div>
+							</div>
+						{{/each}}
+					</script>
 					
 					<div class="foot" style="clear: both;">
 						合计：<span id="total">0.00</span>
+						<div class="jiesuan">
+							<a href="confirmOrder.html">去结算</a>
+						</div>
 					</div>
+					
 				</div>
 			</div>
 			

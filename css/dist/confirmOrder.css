@@ -1,3 +1,375 @@
 .main {
-  background-color: #7CFC00;
-  height: 300px; }
+  height: 1230px;
+  width: 1100px;
+  margin: 0 auto; }
+
+.newaddress_box {
+  display: none;
+  width: 576px;
+  height: 456px;
+  font-size: 12px;
+  color: #5b5b5b;
+  background-color: white;
+  position: absolute;
+  z-index: 99999;
+  top: 200px;
+  left: 240px; }
+  .newaddress_box .newaddress_box_tit {
+    height: 35px;
+    background-color: whitesmoke;
+    line-height: 35px;
+    margin: 0 0 0 1px;
+    padding: 0 0 0 18px;
+    position: relative; }
+    .newaddress_box .newaddress_box_tit img {
+      width: 20px;
+      height: 20px;
+      float: right;
+      margin-top: 8px;
+      margin-right: 20px; }
+  .newaddress_box .new_address_form {
+    width: 576px;
+    height: 405px; }
+
+.newaddress_box_name {
+  height: 24px; }
+  .newaddress_box_name span {
+    width: 76px;
+    margin-left: 20px; }
+  .newaddress_box_name input {
+    width: 170px; }
+  .newaddress_box_name p {
+    padding-left: 100px; }
+
+.field_notice {
+  height: 24px;
+  margin-left: 73px;
+  line-height: 20px;
+  color: #9C9C9C; }
+  .field_notice span {
+    margin-left: 177px; }
+
+.area {
+  height: 24px;
+  margin: 0 0 0 20px; }
+  .area .edit_region_button {
+    display: none; }
+  .area .area_input {
+    width: 90px; }
+  .area .field_notice {
+    margin-left: 0px; }
+
+.detailinfo {
+  margin-left: 20px;
+  margin-top: 10px; }
+  .detailinfo .detail_input input {
+    width: 315px;
+    height: 46px; }
+
+.post_number {
+  margin-left: 20px;
+  margin-top: 10px; }
+
+.phonenumber {
+  margin-left: 20px;
+  margin-top: 10px; }
+  .phonenumber .shr_tel {
+    margin-left: 20px; }
+
+.peisongtime {
+  margin-left: 20px;
+  margin-top: 10px; }
+  .peisongtime span {
+    float: left; }
+  .peisongtime dl {
+    width: 125px;
+    float: left; }
+    .peisongtime dl dt {
+      float: left;
+      margin-right: 10px; }
+
+.save_address {
+  margin-left: 65px;
+  margin-top: 40px; }
+
+.confirm {
+  margin: 40px auto;
+  width: 200px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 15px; }
+  .confirm a {
+    color: white;
+    display: block;
+    float: left;
+    width: 100px;
+    height: 30px;
+    background-color: #07C7D3; }
+
+.confirm a:nth-child(2) {
+  color: #07C7D3;
+  background-color: white; }
+
+.querenxinxi {
+  height: 30px;
+  background-color: #7FFFD4;
+  font-size: 15px;
+  line-height: 30px; }
+
+.querenshouhuo {
+  height: 50px;
+  border-bottom: 1px solid #F1F1F1;
+  padding-bottom: 0px;
+  line-height: 50px; }
+  .querenshouhuo a {
+    display: block;
+    width: 100px;
+    height: 50px;
+    float: right;
+    color: #66AFE9;
+    font-weight: 600; }
+
+.xin {
+  height: 60px; }
+  .xin .tianjiaAddress {
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border: 1px solid gray;
+    margin-top: 20px;
+    margin-left: 100px;
+    background-color: blanchedalmond; }
+
+.querendingdan {
+  height: 25px;
+  border-bottom: 5px solid; }
+
+.cart .header_title div, .cart .row div {
+  width: 122px;
+  height: 30px;
+  line-height: 30px;
+  float: left;
+  overflow: hidden;
+  background-color: #F1F1F1;
+  text-align: center; }
+
+.cart, .cart .header_title, .cart .row, .cart .cart_body {
+  clear: both; }
+
+.cart_body .row .minus, .cart_body .row .add {
+  width: 20px;
+  height: 25px;
+  border: 1px solid;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer; }
+
+.cart .cart_body {
+  width: 1100px;
+  margin: 0 auto;
+  clear: both; }
+  .cart .cart_body .row {
+    clear: both; }
+    .cart .cart_body .row div {
+      text-align: center;
+      width: 122px;
+      height: 70px;
+      line-height: 70px;
+      float: left;
+      border-bottom: 1px solid;
+      overflow: hidden; }
+
+.foot {
+  width: 1100px;
+  height: 50px;
+  margin: 15px auto;
+  background-color: #F0F0F0;
+  border-radius: 5px;
+  font-size: 20px;
+  line-height: 50px;
+  color: #FF6C00;
+  font-weight: 600; }
+  .foot .jiesuan {
+    width: 100px;
+    height: 50px;
+    float: right;
+    background-color: greenyellow;
+    border-radius: 5px;
+    text-align: center; }
+    .foot .jiesuan a {
+      color: white; }
+
+.cart_body .row .minus, .cart_body .row .add {
+  margin-top: 5px;
+  width: 20px;
+  height: 23px;
+  border: 1px solid;
+  display: inline-block;
+  text-align: center;
+  line-height: 20px;
+  cursor: pointer; }
+.cart_body .row .img img {
+  width: 120px;
+  height: 70px; }
+.cart_body .row .title {
+  font-size: 14px;
+  padding: 10px 0px;
+  line-height: 27px !important; }
+
+.write_order_info {
+  height: 230px;
+  background-color: #F3F3F3;
+  border: 1px solid #EDEDED;
+  margin: 131px 0 25px; }
+  .write_order_info .message_to_saller p {
+    width: 100px;
+    height: 53px;
+    float: left;
+    line-height: 53px;
+    margin: 0 0 0 15px; }
+  .write_order_info .message_to_saller textarea {
+    width: 687px;
+    height: 25px;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-bottom: 1px solid #eeeeed;
+    border-right: 1px solid #eeeeed;
+    margin-top: 16px;
+    margin-left: 2px;
+    color: #afafaf;
+    padding: 4px 0 0 5px; }
+
+.use_youhuijuan {
+  height: 54px;
+  margin: 0 0 0 16px;
+  padding-top: 19px;
+  border-top: 1px dashed gray;
+  border-bottom: 1px dashed gray; }
+  .use_youhuijuan input {
+    width: 15px;
+    height: 15px;
+    float: left; }
+  .use_youhuijuan p {
+    width: 100px;
+    height: 15px;
+    float: left;
+    line-height: 15px;
+    margin-left: 10px; }
+  .use_youhuijuan .t {
+    width: 200px;
+    margin-right: 15px; }
+  .use_youhuijuan span {
+    display: block;
+    float: left;
+    width: 100px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    border: 1px solid gray;
+    font-size: 14px;
+    background-color: #F1F1F1;
+    margin-right: 5px; }
+  .use_youhuijuan .qian {
+    color: tomato;
+    float: right;
+    border: none;
+    font-size: 20px;
+    font-weight: 600; }
+
+.youhuiiii {
+  width: 1100px;
+  height: 54px;
+  margin: 0 0 0 16px;
+  padding-top: 19px; }
+  .youhuiiii input {
+    width: 15px;
+    height: 15px;
+    float: left; }
+  .youhuiiii p {
+    width: 100px;
+    height: 15px;
+    float: left;
+    line-height: 15px;
+    margin-left: 10px; }
+  .youhuiiii select {
+    float: left; }
+  .youhuiiii span {
+    float: left;
+    display: block;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    line-height: 18px;
+    margin-left: 5px;
+    background-color: #7FFFD4;
+    border: 1px solid forestgreen; }
+  .youhuiiii .qian {
+    width: 100px;
+    height: 20px;
+    background: none;
+    color: tomato;
+    float: right;
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 17px; }
+
+.yunsong {
+  height: 52px;
+  margin: 0 0 0 16px;
+  padding-top: 19px; }
+  .yunsong p {
+    width: 100px;
+    height: 15px;
+    float: left;
+    line-height: 15px;
+    margin-left: 10px; }
+  .yunsong select {
+    float: left; }
+  .yunsong span {
+    float: left;
+    display: block;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    line-height: 18px;
+    margin-left: 5px;
+    background-color: #7FFFD4;
+    border: 1px solid forestgreen; }
+  .yunsong .qian {
+    width: 100px;
+    height: 20px;
+    background: none;
+    color: tomato;
+    float: right;
+    border: none;
+    font-size: 20px;
+    font-weight: 600; }
+
+.tijiao {
+  width: 360px;
+  height: 45px;
+  float: right;
+  line-height: 45px;
+  text-align: center; }
+  .tijiao .ptj1 {
+    display: block;
+    color: green;
+    width: 180px;
+    height: 45px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    float: left; }
+  .tijiao .ptj2 {
+    display: block;
+    float: left;
+    background-color: #7CFC00;
+    color: white;
+    width: 180px;
+    height: 45px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600; }

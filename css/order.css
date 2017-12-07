@@ -1,0 +1,146 @@
+/*@charset UTF-8;
+.dingdanBox{width:714px;margin:-10px auto 0;}
+.dingd_tit{border-bottom:1px solid #DEDFDA;height:30px;font-weight:700;padding-left:4px;}
+.dingd_tit2{line-height:28px;padding:10px 0 10px 4px;}
+.dingdanCon{width:642px;border:1px solid #B9B9B9;margin:0 0 20px;padding:5px 35px 40px;}
+.ddTx{line-height:24px;border-bottom:1px solid #DEDFDA;padding:0 0 5px;}
+.ddTx h4{padding:15px 0 4px;}
+.ddTx h4 strong{color:#000;}
+.ddTable .img{width:50px;height:50px;border:1px solid #DBDADA;padding:1px;}
+.ddTable td{padding:10px 0;}
+.querenBox{width:778px;margin:0 auto 22px;}
+.querenBox .box{width:772px;border:1px solid #D9D9D9;padding:20px 0;}
+.querenTit{font-size:14px;font-weight:700;color:#000;height:24px;padding:0 0 7px;}
+.querenUl{width:565px;padding:5px 0 15px 26px;}
+.querenUl li{float:left;width:123px;height:30px;border:1px solid #ddd;overflow:hidden;margin:10px 15px 0 0;}
+.querenTx{line-height:28px;padding:6px 0 0 26px;}
+.querenTxare{width:628px;height:50px;border:1px solid #DADADA;padding:5px;}
+.querenP{width:225px;line-height:17px;}
+.confirm_orderinfo_status{height:auto;margin-top:8px;}
+.confirm_address{height:51px;background:url(../wimages/confirm_address_bg.jpg) no-repeat;position:relative;}
+.confirm_address span{width:auto;height:auto;position:absolute;right:2px;top:31px;}
+.confirm_address span a{color:#229CA0;font-weight:700;}
+.other_more_address .other_li{height:26px;margin-top:8px;}
+.other_more_address .other_li .send_to{display:none;}
+.other_more_address .checked{height:26px;margin-top:8px;background:#F7F7F3;}
+.use_new_address{margin-left:102px;margin-top:15px;cursor:pointer;width:94px;}
+.default_address{width:975px;height:36px;border:1px solid #27C5C9;background:url(../wimages/address_tubiao.jpg) 9px 8px #DFF6F7 no-repeat;margin:13px 0 0;}
+.default_address .send_to{width:50px;float:left;margin-left:29px;line-height:36px;color:#229CA0;font-weight:700;}
+.default_address .other_address_radio{width:24px;height:auto;margin-top:10px;float:left;}
+.default_address .other_address_info{width:auto;float:left;line-height:36px;font-weight:700;color:#5B5B5B;}
+.default_address .other_address_operiation{width:auto;float:left;line-height:36px;color:#8A8B8B;margin-left:35px;}
+.default_address .other_address_operiation .adefault:hover{text-decoration:none;}
+.confirm_order_info_box h1{height:30px;margin-top:12px;width:974px;padding-left:3px;}
+.confirm_order_content_tit{height:44px;background:url(../wimages/goods_tit_bg.jpg) repeat-x;}
+.confirm_order_content_tit li{float:left;line-height:44px;font-weight:700;color:0;}
+.confirm_order_content_tit .li_one{width:218px;margin-left:140px;display:inline;}
+.confirm_order_content_tit .li_two{width:129px;}
+.confirm_order_content_tit .li_three{width:127px;}
+.confirm_order_content_tit .li_four{width:147px;}
+.confirm_order_content_tit .li_five{width:126px;}
+.confirm_order_content_tit .li_six{width:90px;}
+.confirm_order_content_storename{height:27px;border-bottom:1px solid #E8E8E8;line-height:27px;width:958px;padding:0 0 0 19px;}
+.confirm_order_content_con{width:975px;height:102px;float:left;border-bottom:1px solid #E8E8E8;}
+.confirm_order_content_con dl{width:290px;float:left;margin-top:9px;margin-left:15px;display:inline;}
+.confirm_order_content_con dl dt{width:78px;height:78px;float:left;border:1px solid #D9D9D9;padding:3px 0 0 3px;}
+.confirm_order_content_con dl dd{width:191px;margin-left:10px;float:left;}
+.confirm_order_content_con span{float:left;text-align:center;margin-top:9px;height:53px;padding:30px 0 0;}
+.confirm_order_content_wasaimoney{width:138px;}
+.confirm_order_content_danjia{width:115px;font-size:14px;color:#FD834C;}
+.confirm_order_content_num{width:133px;}
+.confirm_order_content_youhui{width:191px;}
+.confirm_order_content_xiaoji{width:65px;font-size:14px;color:#FD834C;font-weight:700;}
+.write_order_info{width:975px;height:auto;border:1px solid #EDEDED;margin:0 0 25px;}
+.message_to_saller{height:auto;background:url(../wimages/dash_bg.jpg) bottom #F7F8F3 no-repeat;padding-bottom:15px;}
+.message_to_saller p{width:72px;float:left;line-height:53px;display:inline;margin:0 0 0 15px;}
+.message_to_saller textarea{width:680px;height:19px;border-top:1px solid #CCC;border-left:1px solid #CCC;border-right:1px solid #EEEEED;border-bottom:1px solid #EEEEED;margin-top:16px;margin-left:2px;color:#AFAFAF;font-size:12px;resize:allow;padding:4px 0 0 5px;}
+.use_youhuijuan{height:54px;background:url(../wimages/write_order_info_two.jpg) no-repeat; position:relative;}
+.use_youhuijuan ul{ width:200px; position:absolute; left:110px; top:40px; background:#ffffff; z-index:10;display:none}
+.use_youhuijuan_button{width:auto;height:auto;float:left;display:inline;margin:19px 0 0 16px;}
+.use_youhuijuan_text{width:72px;float:left;line-height:54px;margin:0 0 0 7px;}
+.youhuiquan_text_box{width:204px;height:25px;margin-top:16px;float:left;}
+.youhuiquan_text_box input{width:198px;height:16px;border:medium none;color:#AFAFAF;margin-left:1px;padding:2px 0 0 2px;}
+.yhj_use_button{width:65px;height:23px;float:left;background:url(../wimages/use_button_bg.jpg) no-repeat;margin:15px 0 0 8px;}
+.yhj_use_button input{width:65px;height:23px;background:transparent;border:none;cursor:pointer;}
+.click_last{width:570px;height:25px;float:left;position:relative;margin:14px 0 0;}
+.click_last .youhui_notice{background:url(../wimages/cuxiao_jiantou.jpg) no-repeat;float:left;}
+.click_last .youhui_notice span{height:17px;background:#85C027;float:left;color:#FFF;line-height:17px;margin:4px 0 0 14px;padding:0 0 0 4px;}
+.click_last a{color:#229CA0;line-height:25px;margin:0 0 0 20px;}
+.click_last .youhui_hedu{font-size:14px;font-weight:700;color:#FD834C;position:absolute;right:20px;}
+.storeyh_peisong_count{height:auto;}
+.storeyh_peisong_count .storeyh_part{height:auto;position:relative;}
+.storeyh_peisong_count .storeyh_part .storeyh_part_button{width:auto;height:auto;float:left;display:inline;margin:16px 0 0 16px;}
+.storeyh_peisong_count .storeyh_part .storeyh_part_text{width:72px;float:left;line-height:46px;margin:0 0 0 7px;}
+.storeyh_select{width:auto;float:left;height:auto;color:#5B5B5B;margin:13px 0 0;}
+.storeyh_peisong_count .storeyh_part span{font-size:14px;font-weight:700;line-height:46px;color:#FD834C;position:absolute;right:32px;}
+.storeyh_peisong_count .ysfs_part{height:52px;position:relative;background:#F7F8F3;}
+.storeyh_peisong_count .ysfs_part .ysfs_part_text{width:60px;float:left;line-height:52px;display:inline;margin:0 0 0 15px;}
+.storeyh_peisong_count .ysfs_part .ysfs_part_select{width:140px;float:left;height:auto;margin:15px 0 0;}
+.storeyh_peisong_count .ysfs_part .ysfs_part_help{width:auto;height:auto;float:left;margin:17px 0 0 5px;}
+.storeyh_peisong_count .ysfs_part span{font-size:14px;font-weight:700;line-height:52px;color:#FD834C;position:absolute;right:32px;}
+.parent_div{height:46px;background:#F7F8F3;}
+.storeyh_zs_list{width:974px;height:auto;border:1px solid #ffc6ac;background:#ffe8d4;float:left;_float:none;padding-bottom:10px;}
+.storeyh_zs_list dl{margin-top:13px;width:959px;height:57px;float:left;padding-left:15px;}
+.storeyh_zs_list dl dt{width:51px;height:51px;float:left;border:1px solid #e6e6e6;background:#FFF;position:relative;padding:2px;}
+.storeyh_zs_list dl dd{margin-left:10px;float:left;width:auto;}
+.little_pic{width:26px;height:26px;position:absolute;left:2px;top:2px;}
+.song_goods_pic{width:51px;height:51px;text-align:center;}
+.write_order_info_two .ysfs_part{height:46px;position:relative;background:url(../wimages/dash_bg.jpg) bottom #F7F8F3 no-repeat;}
+.write_order_info_two .ysfs_part .ysfs_part_text{width:60px;float:left;line-height:46px;display:inline;margin:0 0 0 25px;}
+.write_order_info_two .ysfs_part .ysfs_part_select{width:140px;float:left;height:auto;margin:13px 0 0;}
+.all_product_count{height:54px;position:relative;background:#F7F8F3;}
+.all_product_count p{width:auto;line-height:54px;position:absolute;right:32px;}
+.all_product_count p span{color:#FD834C;font-size:14px;}
+.all_product_count p strong{font-size:18px;}
+.confirm_order_content_con_haveyouhui{width:975px;height:102px;float:left;background:#EAF6FE;border-top:1px solid #E8E8E8;}
+.order_last_info{width:545px;height:auto;border:1px solid #6FA60D;margin:15px 0 0 430px;}
+.order_last_info_in{width:539px;height:auto;border:3px solid #EAF2DC;padding:0 0 12px;}
+.order_last_info_in p{width:509px;text-align:right;margin:12px 0 0;}
+.order_last_info_in p span{color:#FD834C;font-size:18px;font-weight:700;}
+.submit_order ul{width:326px;height:41px;margin:0 0 0 651px;}
+.submit_order ul li{width:163px;float:left;text-align:center;line-height:41px;}
+.submit_order ul .goback{background:url(../wimages/goback.jpg) 25px 13px no-repeat;}
+#over{position:absolute;left:0;top:0;z-index:999;filter:alpha(opacity=50);-moz-opacity:0.5;opacity:0.5;background:#000;}
+.newaddress_box{width:567px;height:auto;font-size:12px;color:#5B5B5B;background:#FFF;float:left;position:absolute;top:30px;left:30px;z-index:9999;}
+.newaddress_box_tit{width:547px;height:35px;background:url(../wimages/newaddress_tit_bg.jpg) repeat-x;line-height:35px;position:relative;margin:0 0 0 1px;padding:0 0 0 18px;}
+.newaddress_box_tit img{position:absolute;right:10px;top:10px;cursor:pointer;}
+.newaddress_box_name,.area,.post_number,.phonenumber,.peisongtime{width:567px;height:23px;margin:16px 0 0;}
+.shouhuoren,.area_text,.detailinfo_text,.post_number_text{width:71px;float:left;margin-left:20px;line-height:23px;}
+.shouhuoren_text_box{width:167px;height:23px;float:left;}
+.shouhuoren_text_box input{width:161px;height:21px;border:1px solid #CCC;padding:0 0 0 4px;}
+.maijia{width:65px;float:left;margin-left:21px;line-height:23px;}
+.maijia_text_box{width:177px;height:23px;float:left;}
+.maijia_text_box input{width:171px;height:21px;border:1px solid #CCC;color:#B1B1B1;padding:0 0 0 4px;}
+.area_input{width:291px;height:23px;float:left;}
+.area_input select{width:90px;height:21px;border:1px solid #CCC;float:left;margin:0 5px 0 0;}
+.detailinfo{width:567px;height:74px;margin:16px 0 0;}
+.detail_input{width:334px;height:74px;float:left;}
+.detail_input textarea{width:332px;height:72px;border:1px solid #CCC;outline:none;resize:none;}
+.post_number_input{width:402px;height:23px;float:left;}
+.post_number_input input{width:128px;height:21px;border:1px solid #CCC;padding:0 0 0 4px;}
+.shr_phonenumber{width:100px;float:left;margin-left:20px;line-height:23px;}
+.shr_phonenumber_box input{width:128px;height:21px;border:1px solid #CCC;padding-left:4px;}
+.shr_tel{width:62px;float:left;margin-left:28px;line-height:23px;}
+.shr_tel_box input{width:128px;padding-left:4px;height:21px;border:1px solid #CCC;color:#B1B1B1;}
+.peisongtime_text{width:67px;margin-left:21px;float:left;}
+.peisongtime dl{width:111px;float:left;}
+.peisongtime dl dt{width:22px;float:left;padding-top:3px;}
+.peisongtime dl dd{width:89px;float:left;}
+.save_address{width:452px;height:23px;text-align:center;margin:20px 0 0 105px;}
+.save_address input{width:12px;height:12px;margin-right:5px;}
+.confirm{width:156px;height:29px;margin:15px 0 0 213px;}
+.confirm dt,.confirm dd{width:78px;float:left;}
+.confirm dd{text-align:center;line-height:29px;}
+#operation_address input,#operation_address textarea,#operation_address select{font-size:12px;color:#5B5B5B;}
+.confirm_order_info_box,.other_more_address,.write_order_info_two{width:977px;height:auto;}
+.other_more_address input,.use_youhuijuan_button input,.storeyh_part_button input,.peisongtime dl dt input{width:14px;height:14px;}
+.other_more_address .checked .other_address_radio,.other_more_address .other_li .other_address_radio{width:auto;height:auto;margin-left:79px;margin-top:5px;float:left;}
+.other_more_address .checked .other_address_info,.other_more_address .other_li .other_address_info{width:auto;height:26px;line-height:26px;margin-left:10px;}
+.other_more_address .checked .other_address_operiation,.other_more_address .other_li .other_address_operiation{width:auto;height:26px;}
+.other_more_address .checked .other_address_operiation a,.other_more_address .other_li .other_address_operiation a,.default_address .other_address_operiation a{margin-left:17px;color:#229CA0;}
+.other_more_address .other_li .other_address_operiation .adefault,.default_address .other_address_operiation .adefault{color:#AFAFAF;cursor:default;}
+.confirm_order_content_storename a,.confirm_order_content_con dl dd a,.submit_order ul li a,.confirm dd a{color:#229CA0;}
+.storeyh_help,.write_order_info_two .ysfs_part .ysfs_part_help{width:auto;height:auto;float:left;margin:15px 0 0 5px;}
+.storeyh_peisong_count .ysfs_part .ysfs_part_select select,.write_order_info_two .ysfs_part .ysfs_part_select select{width:140px;}
+.newaddress_box_name span,.phonenumber span{height:23px;}
+.shr_phonenumber_box,.shr_tel_box{width:132px;height:23px;float:left;}*/
